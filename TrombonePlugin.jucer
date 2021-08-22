@@ -5,6 +5,18 @@
               pluginFormats="buildStandalone,buildUnity">
   <MAINGROUP id="AWlGkG" name="TrombonePlugin">
     <GROUP id="{67DCC411-5748-B466-2E12-6BC76144C01C}" name="Source">
+      <FILE id="Bc2DRY" name="Global.h" compile="0" resource="0" file="Source/Global.h"/>
+      <FILE id="RWlwiz" name="LipModel.cpp" compile="1" resource="0" file="Source/LipModel.cpp"/>
+      <FILE id="GR4oEu" name="LipModel.h" compile="0" resource="0" file="Source/LipModel.h"/>
+      <FILE id="TJp0Sz" name="LowPass.cpp" compile="1" resource="0" file="Source/LowPass.cpp"/>
+      <FILE id="KHUEiA" name="LowPass.h" compile="0" resource="0" file="Source/LowPass.h"/>
+      <FILE id="RV9rtq" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="jvzS3W" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="igsX9u" name="Trombone.cpp" compile="1" resource="0" file="Source/Trombone.cpp"/>
+      <FILE id="ytP9cf" name="Trombone.h" compile="0" resource="0" file="Source/Trombone.h"/>
+      <FILE id="shPD0B" name="Tube.cpp" compile="1" resource="0" file="Source/Tube.cpp"/>
+      <FILE id="oGYoo6" name="Tube.h" compile="0" resource="0" file="Source/Tube.h"/>
       <FILE id="slksXX" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>
       <FILE id="zGkdTM" name="PluginProcessor.h" compile="0" resource="0"

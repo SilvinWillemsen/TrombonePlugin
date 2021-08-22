@@ -9,6 +9,8 @@
 #pragma once
 
 #include <JuceHeader.h>
+#include "Trombone.h"
+#include "LowPass.h"
 
 //==============================================================================
 /**
@@ -53,12 +55,25 @@ public:
     void getStateInformation (juce::MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
 
+    std::shared_ptr<Trombone> getTrombonePtr() { return trombone; };
+    
 private:
     //==============================================================================
+    // Parameters
     AudioParameterFloat* gain;
     AudioParameterFloat* frequency;
-    unsigned long t;
+    
+    // Sample rate
     double fs;
+    
+    // Trombone variables
+    std::shared_ptr<Trombone> trombone;
+    std::vector<std::vector<double>> geometry;
+    int controlHeight, controlY;
+        
+    std::unique_ptr<LowPass> lowPass;
+    
+    bool init = true;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (TrombonePluginAudioProcessor)
 };

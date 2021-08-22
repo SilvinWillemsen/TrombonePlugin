@@ -22,6 +22,7 @@ TrombonePluginAudioProcessor::TrombonePluginAudioProcessor()
                        )
 #endif
 {
+#ifdef NOEDITOR
     addParameter (gain = new AudioParameterFloat ("gain", // parameter ID
         "Gain", // parameter name
         0.0f,   // minimum value
@@ -32,6 +33,8 @@ TrombonePluginAudioProcessor::TrombonePluginAudioProcessor()
         20.0f,   // minimum value
         880.0f,   // maximum value
         440.0f)); // default value
+#endif
+    
 }
 
 TrombonePluginAudioProcessor::~TrombonePluginAudioProcessor()
@@ -103,9 +106,58 @@ void TrombonePluginAudioProcessor::changeProgramName (int index, const juce::Str
 //==============================================================================
 void TrombonePluginAudioProcessor::prepareToPlay (double sampleRate, int samplesPerBlock)
 {
-    // Use this method as the place to do any pre-playback
-    // initialisation that you need..
+    if (sampleRate != 44100)
+        std::cout << "sampleRate is not 44100 Hz!!" << std::endl;
+    
     fs = sampleRate;
+    NamedValueSet parameters;
+    
+    //// Tube ////
+    parameters.set ("T", 26.85);
+    parameters.set ("LnonExtended", Global::LnonExtended);
+    parameters.set ("Lextended", Global::Lextended);
+    parameters.set ("L", Global::LnonExtended);
+
+    // Geometric information including formula from bell taken from T. Smyth "Trombone synthesis by model and measurement"
+    geometry = {
+        {0.708, 0.177, 0.711, 0.241, 0.254, 0.502},         // lengths
+        {0.0069, 0.0072, 0.0069, 0.0071, 0.0075, 0.0107}    // radii
+    };
+    
+    parameters.set ("flare", 0.7);                 // flare (exponent coeff)
+    parameters.set ("x0", 0.0174);                    // position of bell mouth (exponent coeff)
+    parameters.set ("b", 0.0063);                   // fitting parameter
+    parameters.set ("bellL", 0.21);                  // bell (length ratio)
+    
+    //// Lip ////
+    double f0 = 300;
+    double H0 = 2.9e-4;
+    parameters.set("f0", f0);                       // fundamental freq lips
+    parameters.set("Mr", 5.37e-5);                  // mass lips
+    parameters.set("omega0", 2.0 * double_Pi * f0); // angular freq
+    
+    parameters.set("sigmaR", 5);                    // damping
+    parameters.set("H0", H0);                       // equilibrium
+    parameters.set("barrier", -H0);                 // equilibrium
+
+    parameters.set("w", 1e-2);                      // lip width
+    parameters.set("Sr", 1.46e-5);                  // lip area
+    
+    parameters.set ("Kcol", 10000);
+    parameters.set ("alphaCol", 3);
+    
+    //// Input ////
+    parameters.set ("Pm", (Global::exciteFromStart ? 300 : 0) * Global::pressureMultiplier);
+//    LVal = (*parameters.getVarPointer ("Lextended"));
+    trombone = std::make_shared<Trombone> (parameters, 1.0 / fs, geometry);
+    
+    double LVal = (*parameters.getVarPointer ("LnonExtended")); // start by contracting
+    double lipFreqVal = 2.4 * trombone->getTubeC() / (trombone->getTubeRho() * LVal);
+
+    trombone->setExtVals (0, lipFreqVal, LVal, true);
+    
+    lowPass = std::make_unique<LowPass> (std::vector<double> { 0.0001343, 0.0005374, 0.0008060, 0.0005374, 0.0001343 },
+                                          std::vector<double> {1, -3.3964, 4.3648, -2.5119, 0.5456 });
 }
 
 void TrombonePluginAudioProcessor::releaseResources()
@@ -161,11 +213,16 @@ void TrombonePluginAudioProcessor::processBlock (juce::AudioBuffer<float>& buffe
     // the samples and the outer loop is handling the channels.
     // Alternatively, you can process the samples with the channels
     // interleaved by keeping the same state.
+    float output = 0.0;
     auto* channelData = buffer.getWritePointer(0);
     for (int i = 0; i < buffer.getNumSamples(); ++i)
     {
-        channelData[i] = *gain * sin (2.0 * double_Pi * *frequency * t / fs);
-        ++t;
+        trombone->calculate();
+        output = trombone->getOutput() * 0.001 * Global::oOPressureMultiplier;
+        output = lowPass->filter (output);
+
+        trombone->updateStates();
+        channelData[i] = Global::outputClamp (output);
     }
     if (totalNumOutputChannels > 1)
     {
@@ -175,12 +232,18 @@ void TrombonePluginAudioProcessor::processBlock (juce::AudioBuffer<float>& buffe
             channelDataR[i] = channelDataL[i];
         
     }
+    trombone->refreshLipModelInputParams();
+
 }
 
 //==============================================================================
 bool TrombonePluginAudioProcessor::hasEditor() const
 {
+#ifdef NOEDITOR
     return false; // (change this to false if you choose to not supply an editor)
+#else
+    return true;
+#endif
 }
 
 juce::AudioProcessorEditor* TrombonePluginAudioProcessor::createEditor()
