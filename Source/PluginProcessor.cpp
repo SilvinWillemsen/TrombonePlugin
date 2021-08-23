@@ -23,16 +23,21 @@ TrombonePluginAudioProcessor::TrombonePluginAudioProcessor()
 #endif
 {
 #ifdef NOEDITOR
-    addParameter (gain = new AudioParameterFloat ("gain", // parameter ID
-        "Gain", // parameter name
-        0.0f,   // minimum value
-        1.0f,   // maximum value
-        0.1f)); // default value
-    addParameter (frequency = new AudioParameterFloat ("frequency", // parameter ID
-        "Frequency", // parameter name
+    addParameter (tubeLength = new AudioParameterFloat ("tubelength", // parameter ID
+        "Tube Length", // parameter name
+        Global::LnonExtended,   // minimum value
+        Global::Lextended,   // maximum value
+        Global::LnonExtended)); // default value
+    addParameter (lipFrequency = new AudioParameterFloat ("lipFrequency", // parameter ID
+        "Lip Frequency", // parameter name
         20.0f,   // minimum value
-        880.0f,   // maximum value
-        440.0f)); // default value
+        1000.0f,   // maximum value
+        Global::nonExtendedLipFreq)); // default value
+    addParameter (pressure = new AudioParameterFloat ("pressure", // parameter ID
+        "Pressure", // parameter name
+        0.0f,   // minimum value
+        6000.0f,   // maximum value
+        0.0f)); // default value
 #endif
     
 }
@@ -151,9 +156,13 @@ void TrombonePluginAudioProcessor::prepareToPlay (double sampleRate, int samples
 //    LVal = (*parameters.getVarPointer ("Lextended"));
     trombone = std::make_shared<Trombone> (parameters, 1.0 / fs, geometry);
     
-    double LVal = (*parameters.getVarPointer ("LnonExtended")); // start by contracting
-    double lipFreqVal = 2.4 * trombone->getTubeC() / (trombone->getTubeRho() * LVal);
-
+    pressureVal = 0;
+    LVal = (*parameters.getVarPointer ("LnonExtended")); // start by contracting
+    lipFreqVal = 2.4 * trombone->getTubeC() / (trombone->getTubeRho() * LVal);
+    
+    LValPrev = LVal;
+    lipFreqValPrev = lipFreqVal;
+    
     trombone->setExtVals (0, lipFreqVal, LVal, true);
     
     lowPass = std::make_unique<LowPass> (std::vector<double> { 0.0001343, 0.0005374, 0.0008060, 0.0005374, 0.0001343 },
@@ -232,8 +241,17 @@ void TrombonePluginAudioProcessor::processBlock (juce::AudioBuffer<float>& buffe
             channelDataR[i] = channelDataL[i];
         
     }
+#ifdef NOEDITOR
+//    double fineTuneRange = 0.5;
+//    double fineTune = fineTuneRange * 2 * (e.y - controlY - controlHeight * 0.5) / controlHeight;
+    LVal = *tubeLength;
+    lipFreqVal = *lipFrequency;
+    lipFreqVal = Global::limit (lipFreqVal, 20, 1000);
+    pressureVal = *pressure;
+    trombone->setExtVals (pressureVal, lipFreqVal, LVal);
+#endif
     trombone->refreshLipModelInputParams();
-
+    LValPrev = LVal;
 }
 
 //==============================================================================

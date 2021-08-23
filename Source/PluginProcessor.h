@@ -59,9 +59,12 @@ public:
     
 private:
     //==============================================================================
+#ifdef NOEDITOR
     // Parameters
-    AudioParameterFloat* gain;
-    AudioParameterFloat* frequency;
+    AudioParameterFloat* tubeLength;
+    AudioParameterFloat* lipFrequency;
+    AudioParameterFloat* pressure;
+#endif
     
     // Sample rate
     double fs;
@@ -74,6 +77,7 @@ private:
     std::unique_ptr<LowPass> lowPass;
     
     bool init = true;
+    double LVal, LValPrev, lipFreqVal, lipFreqValPrev, pressureVal;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (TrombonePluginAudioProcessor)
 };

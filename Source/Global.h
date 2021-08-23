@@ -9,7 +9,7 @@
 */
 
 #pragma once
-//#def NOEDITOR
+#define NOEDITOR
 
 namespace Global {
     

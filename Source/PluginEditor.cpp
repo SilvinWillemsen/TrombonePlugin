@@ -123,10 +123,8 @@ void TrombonePluginAudioProcessorEditor::mouseDown (const MouseEvent& e)
     mouseEllipseVisible = true;
 }
 
-void TrombonePluginAudioProcessorEditor::mouseDrag(const MouseEvent& e)
+void TrombonePluginAudioProcessorEditor::mouseDrag (const MouseEvent& e)
 {
-    double xRatio = e.x / static_cast<double> (getWidth());
-
     double fineTuneRange = 0.5;
     double fineTune = fineTuneRange * 2 * (e.y - controlY - controlHeight * 0.5) / controlHeight;
     //    lipFreqVal = ((1-xRatio) + xRatio * Global::LnonExtended/Global::Lextended) * Global::nonExtendedLipFreq * (1 + fineTune);
