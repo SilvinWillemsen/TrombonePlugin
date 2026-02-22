@@ -9,13 +9,16 @@
 /* Begin PBXAggregateTarget section */
 		895B5195FDA79EF1666424C5 /* TrombonePlugin - All */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 93BC8D40999D986DFD6A067B /* Build configuration list for PBXAggregateTarget "TrombonePlugin - All" */;
+			buildConfigurationList = 93BC8D40999D986DFD6A067B;
 			buildPhases = (
 			);
 			dependencies = (
-				D71FC3D9F80EA8F0D5F4A3D3 /* PBXTargetDependency */,
-				C16F06F16E72CDE3662956E6 /* PBXTargetDependency */,
-				03C508FBA5EC0040FEBC5702 /* PBXTargetDependency */,
+				CF4269010DC166F98BC650E5,
+				C40B732EA9CDE6D9F1B53C9F,
+				D71FC3D9F80EA8F0D5F4A3D3,
+				C16F06F16E72CDE3662956E6,
+				03C508FBA5EC0040FEBC5702,
+				43E54E84436BAB67C370B309,
 			);
 			name = "TrombonePlugin - All";
 			productName = TrombonePlugin;
@@ -23,208 +26,259 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		2834FE991C8F9864E55A75C2 /* include_juce_audio_processors.mm in Sources */ = {isa = PBXBuildFile; fileRef = A852DC0B243C460E362B8F6B /* include_juce_audio_processors.mm */; };
-		2924A10A6ECE2F03751EC097 /* LipModel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96BAAFEEF7213D824A12B5F1 /* LipModel.cpp */; };
-		2D8A902A9F87183A62BC234D /* include_juce_audio_plugin_client_Unity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA58BD227F24690DB0BC6630 /* include_juce_audio_plugin_client_Unity.cpp */; };
-		3CD9C9B8A9ACC424BE8BF1BA /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE8A3AD8BF044857832A4F3 /* CoreAudioKit.framework */; };
-		4004A3EB47E887654C85D27D /* include_juce_core.mm in Sources */ = {isa = PBXBuildFile; fileRef = D8260C3EE81D35EAC853F31A /* include_juce_core.mm */; };
-		4F54B4A3CD5C1C9633AE3F71 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BC32CE97EBC8C406A07A4D /* WebKit.framework */; };
-		5F2F6CEC6616A7DD47A017BE /* include_juce_audio_devices.mm in Sources */ = {isa = PBXBuildFile; fileRef = 771AD193CC83B8FD2EEBFAD0 /* include_juce_audio_devices.mm */; };
-		62FE8B9C45F68FA2AF7368A3 /* include_juce_data_structures.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1B6BAB7868343AAEE25A37F6 /* include_juce_data_structures.mm */; };
-		6306D9591E7A432B61F1FEB3 /* RecentFilesMenuTemplate.nib in Resources */ = {isa = PBXBuildFile; fileRef = 78A10EA7E74C8FDA427368B8 /* RecentFilesMenuTemplate.nib */; };
-		659AA984549A9009C040241A /* audioplugin_TrombonePlugin_UnityScript.cs in Embed Unity Script */ = {isa = PBXBuildFile; fileRef = FC0EDAB86D8354DBCBA9C588 /* audioplugin_TrombonePlugin_UnityScript.cs */; };
-		6CAAF8E8677AD210CA93D437 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071452CBBD29FC5D8A8F0DFF /* QuartzCore.framework */; };
-		744298BB86B9D01F1C0F4D96 /* include_juce_gui_basics.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A1049BF772CB2E697971E05 /* include_juce_gui_basics.mm */; };
-		75741631EDE23CCF17036781 /* Tube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BB4E09FF04B569F9235F62F /* Tube.cpp */; };
-		7D47840B505CAF5F73C7E4AB /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537419233E4C7EB8A83B3A0F /* Accelerate.framework */; };
-		854863476B18F166BF0CA057 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7647A8C9BC5C2B30DE16E8EC /* IOKit.framework */; };
-		929E3F3FEFC0EC6D78E71717 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0993099DB2DEC5A58FFB5D4B /* AudioToolbox.framework */; };
-		9426A9D426CF8EB31AD41239 /* PluginProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E17D97C2F21C86CECF63EF51 /* PluginProcessor.cpp */; };
-		9FF1D40B37D1F65EB73D718D /* include_juce_gui_extra.mm in Sources */ = {isa = PBXBuildFile; fileRef = A97910DF6285903E36D53838 /* include_juce_gui_extra.mm */; };
-		AA2B4F3A26D29CDA0005662C /* RecentFilesMenuTemplate.nib in Resources */ = {isa = PBXBuildFile; fileRef = 78A10EA7E74C8FDA427368B8 /* RecentFilesMenuTemplate.nib */; };
-		AA2B4F3B26D29CDA0005662C /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 537419233E4C7EB8A83B3A0F /* Accelerate.framework */; };
-		AA2B4F3C26D29CDA0005662C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0993099DB2DEC5A58FFB5D4B /* AudioToolbox.framework */; };
-		AA2B4F3D26D29CDA0005662C /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75662E3C4CA8F7CC24F9B770 /* Carbon.framework */; };
-		AA2B4F3E26D29CDA0005662C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0002F72DD638A8E432D73F02 /* Cocoa.framework */; };
-		AA2B4F3F26D29CDA0005662C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4CBF78A5AA5931D5248D212 /* CoreAudio.framework */; };
-		AA2B4F4026D29CDA0005662C /* CoreAudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE8A3AD8BF044857832A4F3 /* CoreAudioKit.framework */; };
-		AA2B4F4126D29CDA0005662C /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465A0C34889E4CC6E5077807 /* CoreMIDI.framework */; };
-		AA2B4F4226D29CDA0005662C /* DiscRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAAA0AE29A1114A65DD5A9AB /* DiscRecording.framework */; };
-		AA2B4F4326D29CDA0005662C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919D185EB31B5381702DA4F6 /* Foundation.framework */; };
-		AA2B4F4426D29CDA0005662C /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7647A8C9BC5C2B30DE16E8EC /* IOKit.framework */; };
-		AA2B4F4526D29CDA0005662C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071452CBBD29FC5D8A8F0DFF /* QuartzCore.framework */; };
-		AA2B4F4626D29CDA0005662C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40BC32CE97EBC8C406A07A4D /* WebKit.framework */; };
-		AE15A45E353A75A11673CD78 /* include_juce_audio_utils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09B83D143D33E6B908E50147 /* include_juce_audio_utils.mm */; };
-		B1B4EFDABE0E87EA63491675 /* include_juce_audio_plugin_client_VST_utils.mm in Sources */ = {isa = PBXBuildFile; fileRef = 70B339C9F2D5601C0E8070FF /* include_juce_audio_plugin_client_VST_utils.mm */; };
-		B34285A0D954B9BABDFEB33C /* include_juce_audio_formats.mm in Sources */ = {isa = PBXBuildFile; fileRef = 17E781491B8F6E42F4AB240D /* include_juce_audio_formats.mm */; };
-		C3A83AE0BE7A6073C5E50947 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75662E3C4CA8F7CC24F9B770 /* Carbon.framework */; };
-		C50EDE48C62D96913E5BB745 /* include_juce_audio_plugin_client_Standalone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1252C7CBF428106D3B0D4572 /* include_juce_audio_plugin_client_Standalone.cpp */; };
-		C6AC7102368DD3CA6BB9CBDF /* Trombone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DFB2A6D2861C40411E20BEFB /* Trombone.cpp */; };
-		C6F66186267078C461E69788 /* LowPass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E5F454D2B506AAD8939F2D40 /* LowPass.cpp */; };
-		CCA431F3CB72F3B3F105B154 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919D185EB31B5381702DA4F6 /* Foundation.framework */; };
-		D28FED6239E5E7166A9E5A17 /* include_juce_graphics.mm in Sources */ = {isa = PBXBuildFile; fileRef = FC855E38D7291F5A2F898E26 /* include_juce_graphics.mm */; };
-		D9621360D6D804C6A1AAD1B3 /* PluginEditor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F0824943E51E39566C7E874 /* PluginEditor.cpp */; };
-		DAC3102F6B183C44D2905693 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4CBF78A5AA5931D5248D212 /* CoreAudio.framework */; };
-		E4BFEC4B15623966178986C4 /* include_juce_audio_plugin_client_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 535927F78AD4CA1A6759F647 /* include_juce_audio_plugin_client_utils.cpp */; };
-		EA0115287BE6063673D3102C /* DiscRecording.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAAA0AE29A1114A65DD5A9AB /* DiscRecording.framework */; };
-		F5611C1A7FE365595660C47A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0002F72DD638A8E432D73F02 /* Cocoa.framework */; };
-		F761C5D0BB96CB9F92305012 /* include_juce_events.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1ED729115D818BCE3DD91964 /* include_juce_events.mm */; };
-		F9FC4050B5F78B9DBDADB821 /* include_juce_audio_basics.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D5602ABBE0A48F6869F2C3C /* include_juce_audio_basics.mm */; };
-		FF7FFBE008C15C6F6A2F35A4 /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465A0C34889E4CC6E5077807 /* CoreMIDI.framework */; };
+		083FCD6BDEF8E84567309073 /* include_juce_audio_plugin_client_AU_2.mm */ = {isa = PBXBuildFile; fileRef = 27BF0B4683849EC488A3F293; };
+		0B11BB2092343A1CAB274F63 /* MetalKit.framework */ = {isa = PBXBuildFile; fileRef = F6061AE0DCB95809A5B1FAB7; settings = { ATTRIBUTES = (Weak, ); }; };
+		1B9C8B25FD61451130D09ED2 /* Standalone Plugin */ = {isa = PBXBuildFile; fileRef = 22EFA5B597720FD3E3C27AEA; };
+		2834FE991C8F9864E55A75C2 /* include_juce_audio_processors.mm */ = {isa = PBXBuildFile; fileRef = A852DC0B243C460E362B8F6B; };
+		2924A10A6ECE2F03751EC097 /* LipModel.cpp */ = {isa = PBXBuildFile; fileRef = 96BAAFEEF7213D824A12B5F1; };
+		2D8A902A9F87183A62BC234D /* include_juce_audio_plugin_client_Unity.cpp */ = {isa = PBXBuildFile; fileRef = BA58BD227F24690DB0BC6630; };
+		38F1B4FD1DF36D2B06C78064 /* AudioUnit.framework */ = {isa = PBXBuildFile; fileRef = 42FAB71EA6350234020710FD; };
+		3CD9C9B8A9ACC424BE8BF1BA /* CoreAudioKit.framework */ = {isa = PBXBuildFile; fileRef = FFE8A3AD8BF044857832A4F3; };
+		4004A3EB47E887654C85D27D /* include_juce_core.mm */ = {isa = PBXBuildFile; fileRef = D8260C3EE81D35EAC853F31A; };
+		4F54B4A3CD5C1C9633AE3F71 /* WebKit.framework */ = {isa = PBXBuildFile; fileRef = 40BC32CE97EBC8C406A07A4D; };
+		56E66562C92B1E019CC97975 /* AU */ = {isa = PBXBuildFile; fileRef = 2218457A5D89A03A7EAB8B3D; };
+		589AE6215AF9B17EC2BEE207 /* include_juce_audio_plugin_client_ARA.cpp */ = {isa = PBXBuildFile; fileRef = AA390B6E80B52CE545FE96B0; };
+		5A7D6B38BB134110EC5124DD /* Shared Code */ = {isa = PBXBuildFile; fileRef = 9F63F577E0F4DAE7FD92DFBB; };
+		5F2F6CEC6616A7DD47A017BE /* include_juce_audio_devices.mm */ = {isa = PBXBuildFile; fileRef = 771AD193CC83B8FD2EEBFAD0; };
+		62FE8B9C45F68FA2AF7368A3 /* include_juce_data_structures.mm */ = {isa = PBXBuildFile; fileRef = 1B6BAB7868343AAEE25A37F6; };
+		6306D9591E7A432B61F1FEB3 /* RecentFilesMenuTemplate.nib */ = {isa = PBXBuildFile; fileRef = 78A10EA7E74C8FDA427368B8; };
+		659AA984549A9009C040241A /* audioplugin_TrombonePlugin_UnityScript.cs */ = {isa = PBXBuildFile; fileRef = FC0EDAB86D8354DBCBA9C588; };
+		68B801607E5C745EBE8A47F7 /* include_juce_graphics_Sheenbidi.c */ = {isa = PBXBuildFile; fileRef = E6B992FF3273DEE01C3251CC; };
+		6CA5D0BCEB37060474FBA415 /* Metal.framework */ = {isa = PBXBuildFile; fileRef = E50A02CE86013EC0FA4CAE40; settings = { ATTRIBUTES = (Weak, ); }; };
+		6CAAF8E8677AD210CA93D437 /* QuartzCore.framework */ = {isa = PBXBuildFile; fileRef = 071452CBBD29FC5D8A8F0DFF; };
+		744298BB86B9D01F1C0F4D96 /* include_juce_gui_basics.mm */ = {isa = PBXBuildFile; fileRef = 2A1049BF772CB2E697971E05; };
+		75741631EDE23CCF17036781 /* Tube.cpp */ = {isa = PBXBuildFile; fileRef = 8BB4E09FF04B569F9235F62F; };
+		7D47840B505CAF5F73C7E4AB /* Accelerate.framework */ = {isa = PBXBuildFile; fileRef = 537419233E4C7EB8A83B3A0F; };
+		854863476B18F166BF0CA057 /* IOKit.framework */ = {isa = PBXBuildFile; fileRef = 7647A8C9BC5C2B30DE16E8EC; };
+		901BEAB0B5C30BBB129CEBD2 /* juce_VST3ManifestHelper.mm */ = {isa = PBXBuildFile; fileRef = DCB71B4B64FE6663A4080121; settings = { COMPILER_FLAGS = "-fobjc-arc -w -DJUCE_SKIP_PRECOMPILED_HEADER"; }; };
+		929E3F3FEFC0EC6D78E71717 /* AudioToolbox.framework */ = {isa = PBXBuildFile; fileRef = 0993099DB2DEC5A58FFB5D4B; };
+		9426A9D426CF8EB31AD41239 /* PluginProcessor.cpp */ = {isa = PBXBuildFile; fileRef = E17D97C2F21C86CECF63EF51; };
+		96587BFCF6EB8DCD6D5467F6 /* Security.framework */ = {isa = PBXBuildFile; fileRef = 4CBB12A3E0CEF94B3C17011F; };
+		97EDD83744931991EB7C590A /* include_juce_audio_plugin_client_VST3.mm */ = {isa = PBXBuildFile; fileRef = BB81492CAFDEF89813695F7A; };
+		986BE7B771EB2407D430766E /* Unity Plugin */ = {isa = PBXBuildFile; fileRef = 81F8E873B85B06EABAE95E5D; };
+		9FF1D40B37D1F65EB73D718D /* include_juce_gui_extra.mm */ = {isa = PBXBuildFile; fileRef = A97910DF6285903E36D53838; };
+		AE15A45E353A75A11673CD78 /* include_juce_audio_utils.mm */ = {isa = PBXBuildFile; fileRef = 09B83D143D33E6B908E50147; };
+		B34285A0D954B9BABDFEB33C /* include_juce_audio_formats.mm */ = {isa = PBXBuildFile; fileRef = 17E781491B8F6E42F4AB240D; };
+		B7D650C519A2B5C4145DD041 /* VST3 Manifest Helper */ = {isa = PBXBuildFile; fileRef = 939BB10CBB9DDF7AE3071128; };
+		BCAA87A33AD5EEF3D81B602D /* include_juce_core_CompilationTime.cpp */ = {isa = PBXBuildFile; fileRef = A0BFD83A15925739E98DAB19; };
+		C35148EDA4CCEF7744D972A8 /* include_juce_audio_processors_ara.cpp */ = {isa = PBXBuildFile; fileRef = 9857EABB038766614147A193; };
+		C40BE3BFCDD728D51A9B669D /* VST3 */ = {isa = PBXBuildFile; fileRef = 1FBCBB407C6BCE940C7B9213; };
+		C50EDE48C62D96913E5BB745 /* include_juce_audio_plugin_client_Standalone.cpp */ = {isa = PBXBuildFile; fileRef = 1252C7CBF428106D3B0D4572; };
+		C6AC7102368DD3CA6BB9CBDF /* Trombone.cpp */ = {isa = PBXBuildFile; fileRef = DFB2A6D2861C40411E20BEFB; };
+		C6F66186267078C461E69788 /* LowPass.cpp */ = {isa = PBXBuildFile; fileRef = E5F454D2B506AAD8939F2D40; };
+		CCA431F3CB72F3B3F105B154 /* Foundation.framework */ = {isa = PBXBuildFile; fileRef = 919D185EB31B5381702DA4F6; };
+		D28FED6239E5E7166A9E5A17 /* include_juce_graphics.mm */ = {isa = PBXBuildFile; fileRef = FC855E38D7291F5A2F898E26; };
+		D9621360D6D804C6A1AAD1B3 /* PluginEditor.cpp */ = {isa = PBXBuildFile; fileRef = 8F0824943E51E39566C7E874; };
+		DAC3102F6B183C44D2905693 /* CoreAudio.framework */ = {isa = PBXBuildFile; fileRef = F4CBF78A5AA5931D5248D212; };
+		EA0115287BE6063673D3102C /* DiscRecording.framework */ = {isa = PBXBuildFile; fileRef = AAAA0AE29A1114A65DD5A9AB; };
+		F33ED98226D99F85AB8FB49D /* include_juce_audio_processors_lv2_libs.cpp */ = {isa = PBXBuildFile; fileRef = 125ED49BA2B465CBD650A3E5; };
+		F5611C1A7FE365595660C47A /* Cocoa.framework */ = {isa = PBXBuildFile; fileRef = 0002F72DD638A8E432D73F02; };
+		F761C5D0BB96CB9F92305012 /* include_juce_events.mm */ = {isa = PBXBuildFile; fileRef = 1ED729115D818BCE3DD91964; };
+		F819C0394999657F3BE02BD3 /* include_juce_audio_plugin_client_AU_1.mm */ = {isa = PBXBuildFile; fileRef = F2049056EC946256860EF761; };
+		F88311DCC94113FEB7F18055 /* include_juce_graphics_Harfbuzz.cpp */ = {isa = PBXBuildFile; fileRef = 211C773503AD74735E724099; };
+		F9FC4050B5F78B9DBDADB821 /* include_juce_audio_basics.mm */ = {isa = PBXBuildFile; fileRef = 4D5602ABBE0A48F6869F2C3C; };
+		FF7FFBE008C15C6F6A2F35A4 /* CoreMIDI.framework */ = {isa = PBXBuildFile; fileRef = 465A0C34889E4CC6E5077807; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		AA2B4F4726D29CDA0005662C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 77FDC0C8B137184F106D22B7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7E8AB29BC3A2B6B62CB7D2AC;
-			remoteInfo = "TrombonePlugin - Shared Code";
-		};
-		AA2B4F4826D29CDA0005662C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 77FDC0C8B137184F106D22B7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7E8AB29BC3A2B6B62CB7D2AC;
-			remoteInfo = "TrombonePlugin - Shared Code";
-		};
-		AA2B4F4926D29CDA0005662C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 77FDC0C8B137184F106D22B7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DE3D949C8BCCDF31A42A005B;
-			remoteInfo = "TrombonePlugin - Standalone Plugin";
-		};
-		AA2B4F4A26D29CDA0005662C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 77FDC0C8B137184F106D22B7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 52221FE6605E158A79C2B366;
-			remoteInfo = "TrombonePlugin - Unity Plugin";
-		};
-		AA2B4F4B26D29CDA0005662C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 77FDC0C8B137184F106D22B7 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7E8AB29BC3A2B6B62CB7D2AC;
-			remoteInfo = "TrombonePlugin - Shared Code";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4967581B47C1D1A7A1D6F909 /* Embed Unity Script */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 7;
 			files = (
-				659AA984549A9009C040241A /* audioplugin_TrombonePlugin_UnityScript.cs in Embed Unity Script */,
+				659AA984549A9009C040241A,
 			);
 			name = "Embed Unity Script";
 			runOnlyForDeploymentPostprocessing = 0;
+			dstPath = "";
+			dstSubfolderSpec = 7;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0002F72DD638A8E432D73F02 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		071452CBBD29FC5D8A8F0DFF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		0993099DB2DEC5A58FFB5D4B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		09B83D143D33E6B908E50147 /* include_juce_audio_utils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_utils.mm; path = ../../JuceLibraryCode/include_juce_audio_utils.mm; sourceTree = SOURCE_ROOT; };
-		0E54651F0876188B0A931E6E /* Info-Standalone_Plugin.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Standalone_Plugin.plist"; sourceTree = SOURCE_ROOT; };
-		1252C7CBF428106D3B0D4572 /* include_juce_audio_plugin_client_Standalone.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_plugin_client_Standalone.cpp; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_Standalone.cpp; sourceTree = SOURCE_ROOT; };
-		17E781491B8F6E42F4AB240D /* include_juce_audio_formats.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_formats.mm; path = ../../JuceLibraryCode/include_juce_audio_formats.mm; sourceTree = SOURCE_ROOT; };
-		1921E258D2CB267723490624 /* LipModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LipModel.h; path = ../../Source/LipModel.h; sourceTree = SOURCE_ROOT; };
-		1B6BAB7868343AAEE25A37F6 /* include_juce_data_structures.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_data_structures.mm; path = ../../JuceLibraryCode/include_juce_data_structures.mm; sourceTree = SOURCE_ROOT; };
-		1ED729115D818BCE3DD91964 /* include_juce_events.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_events.mm; path = ../../JuceLibraryCode/include_juce_events.mm; sourceTree = SOURCE_ROOT; };
-		22EFA5B597720FD3E3C27AEA /* TrombonePlugin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrombonePlugin.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		27BE9F00FAA46D9FFFADAD9A /* Trombone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Trombone.h; path = ../../Source/Trombone.h; sourceTree = SOURCE_ROOT; };
-		2A1049BF772CB2E697971E05 /* include_juce_gui_basics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_gui_basics.mm; path = ../../JuceLibraryCode/include_juce_gui_basics.mm; sourceTree = SOURCE_ROOT; };
-		31EE1867C273FAA722661118 /* juce_audio_devices */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_devices; path = /Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_audio_devices; sourceTree = "<absolute>"; };
-		3202D5392B033C7AC88535AC /* juce_gui_extra */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_gui_extra; path = /Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_gui_extra; sourceTree = "<absolute>"; };
-		3498EB92A2DD8F7A1879941B /* juce_graphics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_graphics; path = /Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_graphics; sourceTree = "<absolute>"; };
-		40BC32CE97EBC8C406A07A4D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		426E983E40E2143C7080DADE /* juce_data_structures */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_data_structures; path = /Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_data_structures; sourceTree = "<absolute>"; };
-		465A0C34889E4CC6E5077807 /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
-		49EF1D1C878691DEC7C04B7C /* PluginEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PluginEditor.h; path = ../../Source/PluginEditor.h; sourceTree = SOURCE_ROOT; };
-		4D5602ABBE0A48F6869F2C3C /* include_juce_audio_basics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_basics.mm; path = ../../JuceLibraryCode/include_juce_audio_basics.mm; sourceTree = SOURCE_ROOT; };
-		535927F78AD4CA1A6759F647 /* include_juce_audio_plugin_client_utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_plugin_client_utils.cpp; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_utils.cpp; sourceTree = SOURCE_ROOT; };
-		537419233E4C7EB8A83B3A0F /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
-		553A469D617D029B28EA9791 /* Tube.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Tube.h; path = ../../Source/Tube.h; sourceTree = SOURCE_ROOT; };
-		5E98A37E5A2E67B222A92DBB /* juce_audio_processors */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_processors; path = /Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_audio_processors; sourceTree = "<absolute>"; };
-		5F127200FDB566D3E4901274 /* JuceHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JuceHeader.h; path = ../../JuceLibraryCode/JuceHeader.h; sourceTree = SOURCE_ROOT; };
-		6FBF2A1AC86B176D5967DD68 /* juce_events */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_events; path = /Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_events; sourceTree = "<absolute>"; };
-		70B339C9F2D5601C0E8070FF /* include_juce_audio_plugin_client_VST_utils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_plugin_client_VST_utils.mm; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_VST_utils.mm; sourceTree = SOURCE_ROOT; };
-		74E239086D661A6E58EB73CF /* juce_audio_basics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_basics; path = /Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_audio_basics; sourceTree = "<absolute>"; };
-		75662E3C4CA8F7CC24F9B770 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
-		7647A8C9BC5C2B30DE16E8EC /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
-		771AD193CC83B8FD2EEBFAD0 /* include_juce_audio_devices.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_devices.mm; path = ../../JuceLibraryCode/include_juce_audio_devices.mm; sourceTree = SOURCE_ROOT; };
-		78A10EA7E74C8FDA427368B8 /* RecentFilesMenuTemplate.nib */ = {isa = PBXFileReference; lastKnownFileType = file.nib; path = RecentFilesMenuTemplate.nib; sourceTree = SOURCE_ROOT; };
-		80D62FE4C3EC790AB19E4BC5 /* Info-Unity_Plugin.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Unity_Plugin.plist"; sourceTree = SOURCE_ROOT; };
-		81F8E873B85B06EABAE95E5D /* audioplugin_TrombonePlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = audioplugin_TrombonePlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		8871389980921B14B0F3DAD7 /* juce_audio_plugin_client */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_plugin_client; path = /Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_audio_plugin_client; sourceTree = "<absolute>"; };
-		8BB4E09FF04B569F9235F62F /* Tube.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Tube.cpp; path = ../../Source/Tube.cpp; sourceTree = SOURCE_ROOT; };
-		8F0824943E51E39566C7E874 /* PluginEditor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PluginEditor.cpp; path = ../../Source/PluginEditor.cpp; sourceTree = SOURCE_ROOT; };
-		919D185EB31B5381702DA4F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		91CE4E75A1822415A4AE84CC /* juce_audio_formats */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_formats; path = /Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_audio_formats; sourceTree = "<absolute>"; };
-		96BAAFEEF7213D824A12B5F1 /* LipModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = LipModel.cpp; path = ../../Source/LipModel.cpp; sourceTree = SOURCE_ROOT; };
-		9F63F577E0F4DAE7FD92DFBB /* libTrombonePlugin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTrombonePlugin.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A852DC0B243C460E362B8F6B /* include_juce_audio_processors.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_processors.mm; path = ../../JuceLibraryCode/include_juce_audio_processors.mm; sourceTree = SOURCE_ROOT; };
-		A97910DF6285903E36D53838 /* include_juce_gui_extra.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_gui_extra.mm; path = ../../JuceLibraryCode/include_juce_gui_extra.mm; sourceTree = SOURCE_ROOT; };
-		AAAA0AE29A1114A65DD5A9AB /* DiscRecording.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiscRecording.framework; path = System/Library/Frameworks/DiscRecording.framework; sourceTree = SDKROOT; };
-		ADDBD79D467554B9BAF1CD39 /* LowPass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LowPass.h; path = ../../Source/LowPass.h; sourceTree = SOURCE_ROOT; };
-		B9E78AA5BF0604734C8FD60F /* JucePluginDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JucePluginDefines.h; path = ../../JuceLibraryCode/JucePluginDefines.h; sourceTree = SOURCE_ROOT; };
-		BA58BD227F24690DB0BC6630 /* include_juce_audio_plugin_client_Unity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_plugin_client_Unity.cpp; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_Unity.cpp; sourceTree = SOURCE_ROOT; };
-		D10A5683501D02C982633635 /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Global.h; path = ../../Source/Global.h; sourceTree = SOURCE_ROOT; };
-		D722105DADC1133FE802BDA5 /* juce_core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_core; path = /Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_core; sourceTree = "<absolute>"; };
-		D8260C3EE81D35EAC853F31A /* include_juce_core.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_core.mm; path = ../../JuceLibraryCode/include_juce_core.mm; sourceTree = SOURCE_ROOT; };
-		DFB2A6D2861C40411E20BEFB /* Trombone.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Trombone.cpp; path = ../../Source/Trombone.cpp; sourceTree = SOURCE_ROOT; };
-		E17D97C2F21C86CECF63EF51 /* PluginProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PluginProcessor.cpp; path = ../../Source/PluginProcessor.cpp; sourceTree = SOURCE_ROOT; };
-		E5F454D2B506AAD8939F2D40 /* LowPass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = LowPass.cpp; path = ../../Source/LowPass.cpp; sourceTree = SOURCE_ROOT; };
-		E807FB6DD141D95D8ED407AB /* juce_audio_utils */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_utils; path = /Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_audio_utils; sourceTree = "<absolute>"; };
-		E913057F8FBD7DF70F0D9B07 /* juce_gui_basics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_gui_basics; path = /Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_gui_basics; sourceTree = "<absolute>"; };
-		ED22FAE8A467DC3ECEF02B4C /* PluginProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PluginProcessor.h; path = ../../Source/PluginProcessor.h; sourceTree = SOURCE_ROOT; };
-		F4CBF78A5AA5931D5248D212 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
-		FC0EDAB86D8354DBCBA9C588 /* audioplugin_TrombonePlugin_UnityScript.cs */ = {isa = PBXFileReference; lastKnownFileType = file.cs; name = audioplugin_TrombonePlugin_UnityScript.cs; path = ../../JuceLibraryCode/audioplugin_TrombonePlugin_UnityScript.cs; sourceTree = SOURCE_ROOT; };
-		FC855E38D7291F5A2F898E26 /* include_juce_graphics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_graphics.mm; path = ../../JuceLibraryCode/include_juce_graphics.mm; sourceTree = SOURCE_ROOT; };
-		FFE8A3AD8BF044857832A4F3 /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
+		0002F72DD638A8E432D73F02 /* Cocoa.framework */ /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		071452CBBD29FC5D8A8F0DFF /* QuartzCore.framework */ /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0993099DB2DEC5A58FFB5D4B /* AudioToolbox.framework */ /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		09B83D143D33E6B908E50147 /* include_juce_audio_utils.mm */ /* include_juce_audio_utils.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_utils.mm; path = ../../JuceLibraryCode/include_juce_audio_utils.mm; sourceTree = SOURCE_ROOT; };
+		0E54651F0876188B0A931E6E /* Info-Standalone_Plugin.plist */ /* Info-Standalone_Plugin.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-Standalone_Plugin.plist"; path = "Info-Standalone_Plugin.plist"; sourceTree = SOURCE_ROOT; };
+		1252C7CBF428106D3B0D4572 /* include_juce_audio_plugin_client_Standalone.cpp */ /* include_juce_audio_plugin_client_Standalone.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_plugin_client_Standalone.cpp; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_Standalone.cpp; sourceTree = SOURCE_ROOT; };
+		125ED49BA2B465CBD650A3E5 /* include_juce_audio_processors_lv2_libs.cpp */ /* include_juce_audio_processors_lv2_libs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_processors_lv2_libs.cpp; path = ../../JuceLibraryCode/include_juce_audio_processors_lv2_libs.cpp; sourceTree = SOURCE_ROOT; };
+		1408BC1A6E3608B58A4270A2 /* juce_audio_processors */ /* juce_audio_processors */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_processors; path = /Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors; sourceTree = "<absolute>"; };
+		17E781491B8F6E42F4AB240D /* include_juce_audio_formats.mm */ /* include_juce_audio_formats.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_formats.mm; path = ../../JuceLibraryCode/include_juce_audio_formats.mm; sourceTree = SOURCE_ROOT; };
+		1921E258D2CB267723490624 /* LipModel.h */ /* LipModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LipModel.h; path = ../../Source/LipModel.h; sourceTree = SOURCE_ROOT; };
+		1B6BAB7868343AAEE25A37F6 /* include_juce_data_structures.mm */ /* include_juce_data_structures.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_data_structures.mm; path = ../../JuceLibraryCode/include_juce_data_structures.mm; sourceTree = SOURCE_ROOT; };
+		1ED729115D818BCE3DD91964 /* include_juce_events.mm */ /* include_juce_events.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_events.mm; path = ../../JuceLibraryCode/include_juce_events.mm; sourceTree = SOURCE_ROOT; };
+		1FBCBB407C6BCE940C7B9213 /* VST3 */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrombonePlugin.vst3; sourceTree = BUILT_PRODUCTS_DIR; };
+		211C773503AD74735E724099 /* include_juce_graphics_Harfbuzz.cpp */ /* include_juce_graphics_Harfbuzz.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_graphics_Harfbuzz.cpp; path = ../../JuceLibraryCode/include_juce_graphics_Harfbuzz.cpp; sourceTree = SOURCE_ROOT; };
+		2147E67CBA20FB41B54351A3 /* juce_audio_formats */ /* juce_audio_formats */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_formats; path = /Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_formats; sourceTree = "<absolute>"; };
+		2218457A5D89A03A7EAB8B3D /* AU */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrombonePlugin.component; sourceTree = BUILT_PRODUCTS_DIR; };
+		22EFA5B597720FD3E3C27AEA /* Standalone Plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrombonePlugin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27BE9F00FAA46D9FFFADAD9A /* Trombone.h */ /* Trombone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Trombone.h; path = ../../Source/Trombone.h; sourceTree = SOURCE_ROOT; };
+		27BF0B4683849EC488A3F293 /* include_juce_audio_plugin_client_AU_2.mm */ /* include_juce_audio_plugin_client_AU_2.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_plugin_client_AU_2.mm; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_AU_2.mm; sourceTree = SOURCE_ROOT; };
+		2A1049BF772CB2E697971E05 /* include_juce_gui_basics.mm */ /* include_juce_gui_basics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_gui_basics.mm; path = ../../JuceLibraryCode/include_juce_gui_basics.mm; sourceTree = SOURCE_ROOT; };
+		2D81669090CFDAB6ADBA41D3 /* juce_audio_plugin_client */ /* juce_audio_plugin_client */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_plugin_client; path = /Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client; sourceTree = "<absolute>"; };
+		2E67D5B69627ADC2CA910DD5 /* juce_audio_basics */ /* juce_audio_basics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_basics; path = /Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_basics; sourceTree = "<absolute>"; };
+		2F1273A1F094A9CF9A85F5A9 /* juce_gui_extra */ /* juce_gui_extra */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_gui_extra; path = /Users/silvinwillemsen/repositories/JUCE/modules/juce_gui_extra; sourceTree = "<absolute>"; };
+		40BC32CE97EBC8C406A07A4D /* WebKit.framework */ /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		42FAB71EA6350234020710FD /* AudioUnit.framework */ /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		465A0C34889E4CC6E5077807 /* CoreMIDI.framework */ /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		468AFE1243FEB5AC88312607 /* Info-VST3_Manifest_Helper.plist */ /* Info-VST3_Manifest_Helper.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-VST3_Manifest_Helper.plist"; path = "Info-VST3_Manifest_Helper.plist"; sourceTree = SOURCE_ROOT; };
+		49EF1D1C878691DEC7C04B7C /* PluginEditor.h */ /* PluginEditor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PluginEditor.h; path = ../../Source/PluginEditor.h; sourceTree = SOURCE_ROOT; };
+		4CBB12A3E0CEF94B3C17011F /* Security.framework */ /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4D5602ABBE0A48F6869F2C3C /* include_juce_audio_basics.mm */ /* include_juce_audio_basics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_basics.mm; path = ../../JuceLibraryCode/include_juce_audio_basics.mm; sourceTree = SOURCE_ROOT; };
+		537419233E4C7EB8A83B3A0F /* Accelerate.framework */ /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		553A469D617D029B28EA9791 /* Tube.h */ /* Tube.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Tube.h; path = ../../Source/Tube.h; sourceTree = SOURCE_ROOT; };
+		5F127200FDB566D3E4901274 /* JuceHeader.h */ /* JuceHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JuceHeader.h; path = ../../JuceLibraryCode/JuceHeader.h; sourceTree = SOURCE_ROOT; };
+		6846D5A55A39A6743A8F7A94 /* juce_audio_utils */ /* juce_audio_utils */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_utils; path = /Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_utils; sourceTree = "<absolute>"; };
+		6DEB4B339F58E3B9ADD63F9F /* juce_events */ /* juce_events */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_events; path = /Users/silvinwillemsen/repositories/JUCE/modules/juce_events; sourceTree = "<absolute>"; };
+		725A47905D0D2FED7F26F5B0 /* Info-AU.plist */ /* Info-AU.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-AU.plist"; path = "Info-AU.plist"; sourceTree = SOURCE_ROOT; };
+		7647A8C9BC5C2B30DE16E8EC /* IOKit.framework */ /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		771AD193CC83B8FD2EEBFAD0 /* include_juce_audio_devices.mm */ /* include_juce_audio_devices.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_devices.mm; path = ../../JuceLibraryCode/include_juce_audio_devices.mm; sourceTree = SOURCE_ROOT; };
+		77E829F294AD1B973457B88E /* juce_gui_basics */ /* juce_gui_basics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_gui_basics; path = /Users/silvinwillemsen/repositories/JUCE/modules/juce_gui_basics; sourceTree = "<absolute>"; };
+		78A10EA7E74C8FDA427368B8 /* RecentFilesMenuTemplate.nib */ /* RecentFilesMenuTemplate.nib */ = {isa = PBXFileReference; lastKnownFileType = file.nib; name = RecentFilesMenuTemplate.nib; path = RecentFilesMenuTemplate.nib; sourceTree = SOURCE_ROOT; };
+		80D62FE4C3EC790AB19E4BC5 /* Info-Unity_Plugin.plist */ /* Info-Unity_Plugin.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-Unity_Plugin.plist"; path = "Info-Unity_Plugin.plist"; sourceTree = SOURCE_ROOT; };
+		81F8E873B85B06EABAE95E5D /* Unity Plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = audioplugin_TrombonePlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB4E09FF04B569F9235F62F /* Tube.cpp */ /* Tube.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Tube.cpp; path = ../../Source/Tube.cpp; sourceTree = SOURCE_ROOT; };
+		8F0824943E51E39566C7E874 /* PluginEditor.cpp */ /* PluginEditor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PluginEditor.cpp; path = ../../Source/PluginEditor.cpp; sourceTree = SOURCE_ROOT; };
+		919D185EB31B5381702DA4F6 /* Foundation.framework */ /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		939BB10CBB9DDF7AE3071128 /* VST3 Manifest Helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = juce_vst3_helper; sourceTree = BUILT_PRODUCTS_DIR; };
+		95B5CFD6AD4B398EC1756CC2 /* juce_graphics */ /* juce_graphics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_graphics; path = /Users/silvinwillemsen/repositories/JUCE/modules/juce_graphics; sourceTree = "<absolute>"; };
+		96BAAFEEF7213D824A12B5F1 /* LipModel.cpp */ /* LipModel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = LipModel.cpp; path = ../../Source/LipModel.cpp; sourceTree = SOURCE_ROOT; };
+		9857EABB038766614147A193 /* include_juce_audio_processors_ara.cpp */ /* include_juce_audio_processors_ara.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_processors_ara.cpp; path = ../../JuceLibraryCode/include_juce_audio_processors_ara.cpp; sourceTree = SOURCE_ROOT; };
+		9F63F577E0F4DAE7FD92DFBB /* Shared Code */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTrombonePlugin.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0BFD83A15925739E98DAB19 /* include_juce_core_CompilationTime.cpp */ /* include_juce_core_CompilationTime.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_core_CompilationTime.cpp; path = ../../JuceLibraryCode/include_juce_core_CompilationTime.cpp; sourceTree = SOURCE_ROOT; };
+		A852DC0B243C460E362B8F6B /* include_juce_audio_processors.mm */ /* include_juce_audio_processors.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_processors.mm; path = ../../JuceLibraryCode/include_juce_audio_processors.mm; sourceTree = SOURCE_ROOT; };
+		A97910DF6285903E36D53838 /* include_juce_gui_extra.mm */ /* include_juce_gui_extra.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_gui_extra.mm; path = ../../JuceLibraryCode/include_juce_gui_extra.mm; sourceTree = SOURCE_ROOT; };
+		AA390B6E80B52CE545FE96B0 /* include_juce_audio_plugin_client_ARA.cpp */ /* include_juce_audio_plugin_client_ARA.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_plugin_client_ARA.cpp; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_ARA.cpp; sourceTree = SOURCE_ROOT; };
+		AAAA0AE29A1114A65DD5A9AB /* DiscRecording.framework */ /* DiscRecording.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiscRecording.framework; path = System/Library/Frameworks/DiscRecording.framework; sourceTree = SDKROOT; };
+		ADDBD79D467554B9BAF1CD39 /* LowPass.h */ /* LowPass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LowPass.h; path = ../../Source/LowPass.h; sourceTree = SOURCE_ROOT; };
+		B9E78AA5BF0604734C8FD60F /* JucePluginDefines.h */ /* JucePluginDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JucePluginDefines.h; path = ../../JuceLibraryCode/JucePluginDefines.h; sourceTree = SOURCE_ROOT; };
+		BA58BD227F24690DB0BC6630 /* include_juce_audio_plugin_client_Unity.cpp */ /* include_juce_audio_plugin_client_Unity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_plugin_client_Unity.cpp; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_Unity.cpp; sourceTree = SOURCE_ROOT; };
+		BB81492CAFDEF89813695F7A /* include_juce_audio_plugin_client_VST3.mm */ /* include_juce_audio_plugin_client_VST3.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_plugin_client_VST3.mm; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_VST3.mm; sourceTree = SOURCE_ROOT; };
+		BC399D481E73365C658C36DE /* juce_core */ /* juce_core */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_core; path = /Users/silvinwillemsen/repositories/JUCE/modules/juce_core; sourceTree = "<absolute>"; };
+		C48B19BF6E4892F0BA1A42E5 /* Info-VST3.plist */ /* Info-VST3.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-VST3.plist"; path = "Info-VST3.plist"; sourceTree = SOURCE_ROOT; };
+		D10A5683501D02C982633635 /* Global.h */ /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Global.h; path = ../../Source/Global.h; sourceTree = SOURCE_ROOT; };
+		D8260C3EE81D35EAC853F31A /* include_juce_core.mm */ /* include_juce_core.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_core.mm; path = ../../JuceLibraryCode/include_juce_core.mm; sourceTree = SOURCE_ROOT; };
+		DCB71B4B64FE6663A4080121 /* juce_VST3ManifestHelper.mm */ /* juce_VST3ManifestHelper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = juce_VST3ManifestHelper.mm; path = /Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/VST3/juce_VST3ManifestHelper.mm; sourceTree = "<absolute>"; };
+		DFB2A6D2861C40411E20BEFB /* Trombone.cpp */ /* Trombone.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Trombone.cpp; path = ../../Source/Trombone.cpp; sourceTree = SOURCE_ROOT; };
+		E17D97C2F21C86CECF63EF51 /* PluginProcessor.cpp */ /* PluginProcessor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = PluginProcessor.cpp; path = ../../Source/PluginProcessor.cpp; sourceTree = SOURCE_ROOT; };
+		E50A02CE86013EC0FA4CAE40 /* Metal.framework */ /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		E53E5C13C0E76DA6A8108532 /* juce_data_structures */ /* juce_data_structures */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_data_structures; path = /Users/silvinwillemsen/repositories/JUCE/modules/juce_data_structures; sourceTree = "<absolute>"; };
+		E5F454D2B506AAD8939F2D40 /* LowPass.cpp */ /* LowPass.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = LowPass.cpp; path = ../../Source/LowPass.cpp; sourceTree = SOURCE_ROOT; };
+		E6B992FF3273DEE01C3251CC /* include_juce_graphics_Sheenbidi.c */ /* include_juce_graphics_Sheenbidi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_graphics_Sheenbidi.c; path = ../../JuceLibraryCode/include_juce_graphics_Sheenbidi.c; sourceTree = SOURCE_ROOT; };
+		EA650A0AB7DD7D93D22925A5 /* juce_audio_devices */ /* juce_audio_devices */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_devices; path = /Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_devices; sourceTree = "<absolute>"; };
+		ED22FAE8A467DC3ECEF02B4C /* PluginProcessor.h */ /* PluginProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PluginProcessor.h; path = ../../Source/PluginProcessor.h; sourceTree = SOURCE_ROOT; };
+		F2049056EC946256860EF761 /* include_juce_audio_plugin_client_AU_1.mm */ /* include_juce_audio_plugin_client_AU_1.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_plugin_client_AU_1.mm; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_AU_1.mm; sourceTree = SOURCE_ROOT; };
+		F4CBF78A5AA5931D5248D212 /* CoreAudio.framework */ /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		F6061AE0DCB95809A5B1FAB7 /* MetalKit.framework */ /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		FC0EDAB86D8354DBCBA9C588 /* audioplugin_TrombonePlugin_UnityScript.cs */ /* audioplugin_TrombonePlugin_UnityScript.cs */ = {isa = PBXFileReference; lastKnownFileType = file.cs; name = audioplugin_TrombonePlugin_UnityScript.cs; path = ../../JuceLibraryCode/audioplugin_TrombonePlugin_UnityScript.cs; sourceTree = SOURCE_ROOT; };
+		FC855E38D7291F5A2F898E26 /* include_juce_graphics.mm */ /* include_juce_graphics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_graphics.mm; path = ../../JuceLibraryCode/include_juce_graphics.mm; sourceTree = SOURCE_ROOT; };
+		FFE8A3AD8BF044857832A4F3 /* CoreAudioKit.framework */ /* CoreAudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudioKit.framework; path = System/Library/Frameworks/CoreAudioKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		841F939284298787AEC3E2CA /* Frameworks */ = {
+		2BC7E04D8C897316C2C4F80F = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D47840B505CAF5F73C7E4AB /* Accelerate.framework in Frameworks */,
-				929E3F3FEFC0EC6D78E71717 /* AudioToolbox.framework in Frameworks */,
-				C3A83AE0BE7A6073C5E50947 /* Carbon.framework in Frameworks */,
-				F5611C1A7FE365595660C47A /* Cocoa.framework in Frameworks */,
-				DAC3102F6B183C44D2905693 /* CoreAudio.framework in Frameworks */,
-				3CD9C9B8A9ACC424BE8BF1BA /* CoreAudioKit.framework in Frameworks */,
-				FF7FFBE008C15C6F6A2F35A4 /* CoreMIDI.framework in Frameworks */,
-				EA0115287BE6063673D3102C /* DiscRecording.framework in Frameworks */,
-				CCA431F3CB72F3B3F105B154 /* Foundation.framework in Frameworks */,
-				854863476B18F166BF0CA057 /* IOKit.framework in Frameworks */,
-				6CAAF8E8677AD210CA93D437 /* QuartzCore.framework in Frameworks */,
-				4F54B4A3CD5C1C9633AE3F71 /* WebKit.framework in Frameworks */,
+				7D47840B505CAF5F73C7E4AB,
+				929E3F3FEFC0EC6D78E71717,
+				F5611C1A7FE365595660C47A,
+				DAC3102F6B183C44D2905693,
+				3CD9C9B8A9ACC424BE8BF1BA,
+				FF7FFBE008C15C6F6A2F35A4,
+				EA0115287BE6063673D3102C,
+				CCA431F3CB72F3B3F105B154,
+				854863476B18F166BF0CA057,
+				6CAAF8E8677AD210CA93D437,
+				96587BFCF6EB8DCD6D5467F6,
+				4F54B4A3CD5C1C9633AE3F71,
+				6CA5D0BCEB37060474FBA415,
+				0B11BB2092343A1CAB274F63,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4EC9090146095F8D7547246 /* Frameworks */ = {
+		841F939284298787AEC3E2CA = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA2B4F3B26D29CDA0005662C /* Accelerate.framework in Frameworks */,
-				AA2B4F3C26D29CDA0005662C /* AudioToolbox.framework in Frameworks */,
-				AA2B4F3D26D29CDA0005662C /* Carbon.framework in Frameworks */,
-				AA2B4F3E26D29CDA0005662C /* Cocoa.framework in Frameworks */,
-				AA2B4F3F26D29CDA0005662C /* CoreAudio.framework in Frameworks */,
-				AA2B4F4026D29CDA0005662C /* CoreAudioKit.framework in Frameworks */,
-				AA2B4F4126D29CDA0005662C /* CoreMIDI.framework in Frameworks */,
-				AA2B4F4226D29CDA0005662C /* DiscRecording.framework in Frameworks */,
-				AA2B4F4326D29CDA0005662C /* Foundation.framework in Frameworks */,
-				AA2B4F4426D29CDA0005662C /* IOKit.framework in Frameworks */,
-				AA2B4F4526D29CDA0005662C /* QuartzCore.framework in Frameworks */,
-				AA2B4F4626D29CDA0005662C /* WebKit.framework in Frameworks */,
+				7D47840B505CAF5F73C7E4AB,
+				929E3F3FEFC0EC6D78E71717,
+				F5611C1A7FE365595660C47A,
+				DAC3102F6B183C44D2905693,
+				3CD9C9B8A9ACC424BE8BF1BA,
+				FF7FFBE008C15C6F6A2F35A4,
+				EA0115287BE6063673D3102C,
+				CCA431F3CB72F3B3F105B154,
+				854863476B18F166BF0CA057,
+				6CAAF8E8677AD210CA93D437,
+				96587BFCF6EB8DCD6D5467F6,
+				4F54B4A3CD5C1C9633AE3F71,
+				6CA5D0BCEB37060474FBA415,
+				0B11BB2092343A1CAB274F63,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A9A2EB1AC8207F8F5965120 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38F1B4FD1DF36D2B06C78064,
+				7D47840B505CAF5F73C7E4AB,
+				929E3F3FEFC0EC6D78E71717,
+				F5611C1A7FE365595660C47A,
+				DAC3102F6B183C44D2905693,
+				3CD9C9B8A9ACC424BE8BF1BA,
+				FF7FFBE008C15C6F6A2F35A4,
+				EA0115287BE6063673D3102C,
+				CCA431F3CB72F3B3F105B154,
+				854863476B18F166BF0CA057,
+				6CAAF8E8677AD210CA93D437,
+				96587BFCF6EB8DCD6D5467F6,
+				4F54B4A3CD5C1C9633AE3F71,
+				6CA5D0BCEB37060474FBA415,
+				0B11BB2092343A1CAB274F63,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C108093981E388E41480A44 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D47840B505CAF5F73C7E4AB,
+				929E3F3FEFC0EC6D78E71717,
+				F5611C1A7FE365595660C47A,
+				DAC3102F6B183C44D2905693,
+				3CD9C9B8A9ACC424BE8BF1BA,
+				FF7FFBE008C15C6F6A2F35A4,
+				EA0115287BE6063673D3102C,
+				CCA431F3CB72F3B3F105B154,
+				854863476B18F166BF0CA057,
+				6CAAF8E8677AD210CA93D437,
+				96587BFCF6EB8DCD6D5467F6,
+				4F54B4A3CD5C1C9633AE3F71,
+				6CA5D0BCEB37060474FBA415,
+				0B11BB2092343A1CAB274F63,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4EC9090146095F8D7547246 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D47840B505CAF5F73C7E4AB,
+				929E3F3FEFC0EC6D78E71717,
+				F5611C1A7FE365595660C47A,
+				DAC3102F6B183C44D2905693,
+				3CD9C9B8A9ACC424BE8BF1BA,
+				FF7FFBE008C15C6F6A2F35A4,
+				EA0115287BE6063673D3102C,
+				CCA431F3CB72F3B3F105B154,
+				854863476B18F166BF0CA057,
+				6CAAF8E8677AD210CA93D437,
+				96587BFCF6EB8DCD6D5467F6,
+				4F54B4A3CD5C1C9633AE3F71,
+				6CA5D0BCEB37060474FBA415,
+				0B11BB2092343A1CAB274F63,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,23 +288,30 @@
 		0AB0FAEDD753D646ADDBF9F0 /* JUCE Library Code */ = {
 			isa = PBXGroup;
 			children = (
-				4D5602ABBE0A48F6869F2C3C /* include_juce_audio_basics.mm */,
-				771AD193CC83B8FD2EEBFAD0 /* include_juce_audio_devices.mm */,
-				17E781491B8F6E42F4AB240D /* include_juce_audio_formats.mm */,
-				1252C7CBF428106D3B0D4572 /* include_juce_audio_plugin_client_Standalone.cpp */,
-				BA58BD227F24690DB0BC6630 /* include_juce_audio_plugin_client_Unity.cpp */,
-				535927F78AD4CA1A6759F647 /* include_juce_audio_plugin_client_utils.cpp */,
-				70B339C9F2D5601C0E8070FF /* include_juce_audio_plugin_client_VST_utils.mm */,
-				A852DC0B243C460E362B8F6B /* include_juce_audio_processors.mm */,
-				09B83D143D33E6B908E50147 /* include_juce_audio_utils.mm */,
-				D8260C3EE81D35EAC853F31A /* include_juce_core.mm */,
-				1B6BAB7868343AAEE25A37F6 /* include_juce_data_structures.mm */,
-				1ED729115D818BCE3DD91964 /* include_juce_events.mm */,
-				FC855E38D7291F5A2F898E26 /* include_juce_graphics.mm */,
-				2A1049BF772CB2E697971E05 /* include_juce_gui_basics.mm */,
-				A97910DF6285903E36D53838 /* include_juce_gui_extra.mm */,
-				5F127200FDB566D3E4901274 /* JuceHeader.h */,
-				B9E78AA5BF0604734C8FD60F /* JucePluginDefines.h */,
+				4D5602ABBE0A48F6869F2C3C,
+				771AD193CC83B8FD2EEBFAD0,
+				17E781491B8F6E42F4AB240D,
+				AA390B6E80B52CE545FE96B0,
+				F2049056EC946256860EF761,
+				27BF0B4683849EC488A3F293,
+				1252C7CBF428106D3B0D4572,
+				BA58BD227F24690DB0BC6630,
+				BB81492CAFDEF89813695F7A,
+				A852DC0B243C460E362B8F6B,
+				9857EABB038766614147A193,
+				125ED49BA2B465CBD650A3E5,
+				09B83D143D33E6B908E50147,
+				D8260C3EE81D35EAC853F31A,
+				A0BFD83A15925739E98DAB19,
+				1B6BAB7868343AAEE25A37F6,
+				1ED729115D818BCE3DD91964,
+				FC855E38D7291F5A2F898E26,
+				211C773503AD74735E724099,
+				E6B992FF3273DEE01C3251CC,
+				2A1049BF772CB2E697971E05,
+				A97910DF6285903E36D53838,
+				5F127200FDB566D3E4901274,
+				B9E78AA5BF0604734C8FD60F,
 			);
 			name = "JUCE Library Code";
 			sourceTree = "<group>";
@@ -258,10 +319,13 @@
 		358B3D780E0716E2BCB7A13C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0E54651F0876188B0A931E6E /* Info-Standalone_Plugin.plist */,
-				80D62FE4C3EC790AB19E4BC5 /* Info-Unity_Plugin.plist */,
-				78A10EA7E74C8FDA427368B8 /* RecentFilesMenuTemplate.nib */,
-				FC0EDAB86D8354DBCBA9C588 /* audioplugin_TrombonePlugin_UnityScript.cs */,
+				C48B19BF6E4892F0BA1A42E5,
+				725A47905D0D2FED7F26F5B0,
+				0E54651F0876188B0A931E6E,
+				80D62FE4C3EC790AB19E4BC5,
+				468AFE1243FEB5AC88312607,
+				78A10EA7E74C8FDA427368B8,
+				FC0EDAB86D8354DBCBA9C588,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -269,12 +333,12 @@
 		3B047A28D0E0D370B47E4DA8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				8880BF6704D3AB150E499A91 /* TrombonePlugin */,
-				7B9ABE1D4C18BC495E92E23C /* JUCE Modules */,
-				0AB0FAEDD753D646ADDBF9F0 /* JUCE Library Code */,
-				358B3D780E0716E2BCB7A13C /* Resources */,
-				E23F1CC09D8BABACFA90094E /* Frameworks */,
-				56E55073285C992227F7B89A /* Products */,
+				8880BF6704D3AB150E499A91,
+				7B9ABE1D4C18BC495E92E23C,
+				0AB0FAEDD753D646ADDBF9F0,
+				358B3D780E0716E2BCB7A13C,
+				E23F1CC09D8BABACFA90094E,
+				56E55073285C992227F7B89A,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -282,9 +346,12 @@
 		56E55073285C992227F7B89A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				22EFA5B597720FD3E3C27AEA /* TrombonePlugin.app */,
-				81F8E873B85B06EABAE95E5D /* audioplugin_TrombonePlugin.bundle */,
-				9F63F577E0F4DAE7FD92DFBB /* libTrombonePlugin.a */,
+				1FBCBB407C6BCE940C7B9213,
+				2218457A5D89A03A7EAB8B3D,
+				22EFA5B597720FD3E3C27AEA,
+				81F8E873B85B06EABAE95E5D,
+				9F63F577E0F4DAE7FD92DFBB,
+				939BB10CBB9DDF7AE3071128,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -292,18 +359,18 @@
 		7B9ABE1D4C18BC495E92E23C /* JUCE Modules */ = {
 			isa = PBXGroup;
 			children = (
-				74E239086D661A6E58EB73CF /* juce_audio_basics */,
-				31EE1867C273FAA722661118 /* juce_audio_devices */,
-				91CE4E75A1822415A4AE84CC /* juce_audio_formats */,
-				8871389980921B14B0F3DAD7 /* juce_audio_plugin_client */,
-				5E98A37E5A2E67B222A92DBB /* juce_audio_processors */,
-				E807FB6DD141D95D8ED407AB /* juce_audio_utils */,
-				D722105DADC1133FE802BDA5 /* juce_core */,
-				426E983E40E2143C7080DADE /* juce_data_structures */,
-				6FBF2A1AC86B176D5967DD68 /* juce_events */,
-				3498EB92A2DD8F7A1879941B /* juce_graphics */,
-				E913057F8FBD7DF70F0D9B07 /* juce_gui_basics */,
-				3202D5392B033C7AC88535AC /* juce_gui_extra */,
+				2E67D5B69627ADC2CA910DD5,
+				EA650A0AB7DD7D93D22925A5,
+				2147E67CBA20FB41B54351A3,
+				2D81669090CFDAB6ADBA41D3,
+				1408BC1A6E3608B58A4270A2,
+				6846D5A55A39A6743A8F7A94,
+				BC399D481E73365C658C36DE,
+				E53E5C13C0E76DA6A8108532,
+				6DEB4B339F58E3B9ADD63F9F,
+				95B5CFD6AD4B398EC1756CC2,
+				77E829F294AD1B973457B88E,
+				2F1273A1F094A9CF9A85F5A9,
 			);
 			name = "JUCE Modules";
 			sourceTree = "<group>";
@@ -311,7 +378,7 @@
 		8880BF6704D3AB150E499A91 /* TrombonePlugin */ = {
 			isa = PBXGroup;
 			children = (
-				8D5DCA8E6EEAAF6A3C354C2F /* Source */,
+				8D5DCA8E6EEAAF6A3C354C2F,
 			);
 			name = TrombonePlugin;
 			sourceTree = "<group>";
@@ -319,19 +386,19 @@
 		8D5DCA8E6EEAAF6A3C354C2F /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D10A5683501D02C982633635 /* Global.h */,
-				96BAAFEEF7213D824A12B5F1 /* LipModel.cpp */,
-				1921E258D2CB267723490624 /* LipModel.h */,
-				E5F454D2B506AAD8939F2D40 /* LowPass.cpp */,
-				ADDBD79D467554B9BAF1CD39 /* LowPass.h */,
-				DFB2A6D2861C40411E20BEFB /* Trombone.cpp */,
-				27BE9F00FAA46D9FFFADAD9A /* Trombone.h */,
-				8BB4E09FF04B569F9235F62F /* Tube.cpp */,
-				553A469D617D029B28EA9791 /* Tube.h */,
-				E17D97C2F21C86CECF63EF51 /* PluginProcessor.cpp */,
-				ED22FAE8A467DC3ECEF02B4C /* PluginProcessor.h */,
-				8F0824943E51E39566C7E874 /* PluginEditor.cpp */,
-				49EF1D1C878691DEC7C04B7C /* PluginEditor.h */,
+				D10A5683501D02C982633635,
+				96BAAFEEF7213D824A12B5F1,
+				1921E258D2CB267723490624,
+				E5F454D2B506AAD8939F2D40,
+				ADDBD79D467554B9BAF1CD39,
+				DFB2A6D2861C40411E20BEFB,
+				27BE9F00FAA46D9FFFADAD9A,
+				8BB4E09FF04B569F9235F62F,
+				553A469D617D029B28EA9791,
+				E17D97C2F21C86CECF63EF51,
+				ED22FAE8A467DC3ECEF02B4C,
+				8F0824943E51E39566C7E874,
+				49EF1D1C878691DEC7C04B7C,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -339,18 +406,21 @@
 		E23F1CC09D8BABACFA90094E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				537419233E4C7EB8A83B3A0F /* Accelerate.framework */,
-				0993099DB2DEC5A58FFB5D4B /* AudioToolbox.framework */,
-				75662E3C4CA8F7CC24F9B770 /* Carbon.framework */,
-				0002F72DD638A8E432D73F02 /* Cocoa.framework */,
-				F4CBF78A5AA5931D5248D212 /* CoreAudio.framework */,
-				FFE8A3AD8BF044857832A4F3 /* CoreAudioKit.framework */,
-				465A0C34889E4CC6E5077807 /* CoreMIDI.framework */,
-				AAAA0AE29A1114A65DD5A9AB /* DiscRecording.framework */,
-				919D185EB31B5381702DA4F6 /* Foundation.framework */,
-				7647A8C9BC5C2B30DE16E8EC /* IOKit.framework */,
-				071452CBBD29FC5D8A8F0DFF /* QuartzCore.framework */,
-				40BC32CE97EBC8C406A07A4D /* WebKit.framework */,
+				42FAB71EA6350234020710FD,
+				537419233E4C7EB8A83B3A0F,
+				0993099DB2DEC5A58FFB5D4B,
+				0002F72DD638A8E432D73F02,
+				F4CBF78A5AA5931D5248D212,
+				FFE8A3AD8BF044857832A4F3,
+				465A0C34889E4CC6E5077807,
+				AAAA0AE29A1114A65DD5A9AB,
+				919D185EB31B5381702DA4F6,
+				7647A8C9BC5C2B30DE16E8EC,
+				071452CBBD29FC5D8A8F0DFF,
+				4CBB12A3E0CEF94B3C17011F,
+				40BC32CE97EBC8C406A07A4D,
+				E50A02CE86013EC0FA4CAE40,
+				F6061AE0DCB95809A5B1FAB7,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -360,28 +430,63 @@
 /* Begin PBXNativeTarget section */
 		52221FE6605E158A79C2B366 /* TrombonePlugin - Unity Plugin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42BE56FFEA3C66B7E607F2C9 /* Build configuration list for PBXNativeTarget "TrombonePlugin - Unity Plugin" */;
+			buildConfigurationList = 42BE56FFEA3C66B7E607F2C9;
 			buildPhases = (
-				4D5B6725CEAE263410E53E54 /* Resources */,
-				1F30D10165290365B555B91C /* Sources */,
-				A4EC9090146095F8D7547246 /* Frameworks */,
-				4967581B47C1D1A7A1D6F909 /* Embed Unity Script */,
+				4D5B6725CEAE263410E53E54,
+				1F30D10165290365B555B91C,
+				A4EC9090146095F8D7547246,
+				4967581B47C1D1A7A1D6F909,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				315F7E476925650649D26964 /* PBXTargetDependency */,
+				315F7E476925650649D26964,
 			);
 			name = "TrombonePlugin - Unity Plugin";
 			productName = TrombonePlugin;
-			productReference = 81F8E873B85B06EABAE95E5D /* audioplugin_TrombonePlugin.bundle */;
+			productReference = 81F8E873B85B06EABAE95E5D;
+			productType = "com.apple.product-type.bundle";
+		};
+		6DB01A54AD0F78612D740C59 /* TrombonePlugin - VST3 Manifest Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D801F18636E74E4C61A1862A;
+			buildPhases = (
+				BABE15EE5D8DE5AA6F2B49BB,
+				2BC7E04D8C897316C2C4F80F,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TrombonePlugin - VST3 Manifest Helper";
+			productName = TrombonePlugin;
+			productReference = 939BB10CBB9DDF7AE3071128;
+			productType = "com.apple.product-type.tool";
+		};
+		6F2E8A7E0B0F167CB65118F9 /* TrombonePlugin - AU */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B4A822D46FA5F5FB9F9E88B;
+			buildPhases = (
+				A8E4F25E71BA60E6F772D0D7,
+				666B9D421EC74E6F8292A26F,
+				8A9A2EB1AC8207F8F5965120,
+				7AC94DE9EBC1531968BF83BA,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				793D6C6FF30218D0B93A381C,
+			);
+			name = "TrombonePlugin - AU";
+			productName = TrombonePlugin;
+			productReference = 2218457A5D89A03A7EAB8B3D;
 			productType = "com.apple.product-type.bundle";
 		};
 		7E8AB29BC3A2B6B62CB7D2AC /* TrombonePlugin - Shared Code */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 734C0626EA9637F597FE7BFD /* Build configuration list for PBXNativeTarget "TrombonePlugin - Shared Code" */;
+			buildConfigurationList = 734C0626EA9637F597FE7BFD;
 			buildPhases = (
-				4B14DA74B627C9AF0757A38B /* Sources */,
+				4B14DA74B627C9AF0757A38B,
 			);
 			buildRules = (
 			);
@@ -389,34 +494,56 @@
 			);
 			name = "TrombonePlugin - Shared Code";
 			productName = TrombonePlugin;
-			productReference = 9F63F577E0F4DAE7FD92DFBB /* libTrombonePlugin.a */;
+			productReference = 9F63F577E0F4DAE7FD92DFBB;
 			productType = "com.apple.product-type.library.static";
 		};
-		DE3D949C8BCCDF31A42A005B /* TrombonePlugin - Standalone Plugin */ = {
+		835C7F1EDF1895AB407DB92A /* TrombonePlugin - VST3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A6B8E55E1E4B43E884B8714B /* Build configuration list for PBXNativeTarget "TrombonePlugin - Standalone Plugin" */;
+			buildConfigurationList = 01B03792A69F105A2A9258C1;
 			buildPhases = (
-				DE12D9EDD249605F1A7CF407 /* Resources */,
-				083D076FAE9C2007D48FF58F /* Sources */,
-				841F939284298787AEC3E2CA /* Frameworks */,
+				A775E8AB675E749A295B3B76,
+				8EBF8CC66ABB7F251188DC4B,
+				8C108093981E388E41480A44,
+				34F9DE7FA7DDE774D3F1316B,
+				1EECF688F3EDAB57AF1A59C1,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B11C6411B9C6CC161E4C47AB /* PBXTargetDependency */,
+				5FEDAE9CD009506AED53429D,
+				E9BDE86C887765F210EDB3C8,
+			);
+			name = "TrombonePlugin - VST3";
+			productName = TrombonePlugin;
+			productReference = 1FBCBB407C6BCE940C7B9213;
+			productType = "com.apple.product-type.bundle";
+		};
+		DE3D949C8BCCDF31A42A005B /* TrombonePlugin - Standalone Plugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6B8E55E1E4B43E884B8714B;
+			buildPhases = (
+				DE12D9EDD249605F1A7CF407,
+				083D076FAE9C2007D48FF58F,
+				841F939284298787AEC3E2CA,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B11C6411B9C6CC161E4C47AB,
 			);
 			name = "TrombonePlugin - Standalone Plugin";
 			productName = TrombonePlugin;
-			productReference = 22EFA5B597720FD3E3C27AEA /* TrombonePlugin.app */;
+			productReference = 22EFA5B597720FD3E3C27AEA;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		77FDC0C8B137184F106D22B7 /* Project object */ = {
+		77FDC0C8B137184F106D22B7 = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1240;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					52221FE6605E158A79C2B366 = {
@@ -441,7 +568,73 @@
 							};
 						};
 					};
+					6DB01A54AD0F78612D740C59 = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					6F2E8A7E0B0F167CB65118F9 = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
 					7E8AB29BC3A2B6B62CB7D2AC = {
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HardenedRuntime = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					835C7F1EDF1895AB407DB92A = {
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 0;
@@ -509,119 +702,444 @@
 					};
 				};
 			};
-			buildConfigurationList = F0956FBA5D702C3F7C5570F7 /* Build configuration list for PBXProject "TrombonePlugin" */;
+			buildConfigurationList = F0956FBA5D702C3F7C5570F7;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 3B047A28D0E0D370B47E4DA8 /* Source */;
+			mainGroup = 3B047A28D0E0D370B47E4DA8;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				895B5195FDA79EF1666424C5 /* TrombonePlugin - All */,
-				DE3D949C8BCCDF31A42A005B /* TrombonePlugin - Standalone Plugin */,
-				52221FE6605E158A79C2B366 /* TrombonePlugin - Unity Plugin */,
-				7E8AB29BC3A2B6B62CB7D2AC /* TrombonePlugin - Shared Code */,
+				895B5195FDA79EF1666424C5,
+				835C7F1EDF1895AB407DB92A,
+				6F2E8A7E0B0F167CB65118F9,
+				DE3D949C8BCCDF31A42A005B,
+				52221FE6605E158A79C2B366,
+				7E8AB29BC3A2B6B62CB7D2AC,
+				6DB01A54AD0F78612D740C59,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4D5B6725CEAE263410E53E54 /* Resources */ = {
+		4D5B6725CEAE263410E53E54 = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA2B4F3A26D29CDA0005662C /* RecentFilesMenuTemplate.nib in Resources */,
+				6306D9591E7A432B61F1FEB3,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE12D9EDD249605F1A7CF407 /* Resources */ = {
+		A775E8AB675E749A295B3B76 = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6306D9591E7A432B61F1FEB3 /* RecentFilesMenuTemplate.nib in Resources */,
+				6306D9591E7A432B61F1FEB3,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E4F25E71BA60E6F772D0D7 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6306D9591E7A432B61F1FEB3,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE12D9EDD249605F1A7CF407 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6306D9591E7A432B61F1FEB3,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1EECF688F3EDAB57AF1A59C1 /* Plugin Copy Step */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Plugin Copy Step";
+			alwaysOutOfDate = 1;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"${CONFIGURATION}\" == \"Debug\" ]]; then\n  destinationPlugin=\"${HOME}/Library/Audio/Plug-Ins/VST3//$(basename \"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\")\"\n  echo Running rm -rf \\\"${destinationPlugin}\\\"\n  rm -rf \"${destinationPlugin}\"\n  echo Running ditto \\\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\\\" \\\"${destinationPlugin}\\\"\n  ditto \"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\" \"${destinationPlugin}\"\n\n  if [[ -n \"${EXPANDED_CODE_SIGN_IDENTITY-}\" ]]; then\n    if [[ -n \"${CODE_SIGN_ENTITLEMENTS-}\" ]]; then\n      entitlementsArg=(--entitlements \"${CODE_SIGN_ENTITLEMENTS}\")\n    fi\n\n    echo Signing Identity: \\\"${EXPANDED_CODE_SIGN_IDENTITY_NAME}\\\"\n    echo Running codesign --verbose=4 --force --sign \\\"${EXPANDED_CODE_SIGN_IDENTITY}\\\" ${entitlementsArg[*]-} ${OTHER_CODE_SIGN_FLAGS-} \\\"${HOME}/Library/Audio/Plug-Ins/VST3//${WRAPPER_NAME}\\\"\n    codesign --verbose=4 --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" ${entitlementsArg[*]-} ${OTHER_CODE_SIGN_FLAGS-} \"${HOME}/Library/Audio/Plug-Ins/VST3//${WRAPPER_NAME}\"\n  fi\nfi\n\nif [[ \"${CONFIGURATION}\" == \"Release\" ]]; then\n  destinationPlugin=\"${HOME}/Library/Audio/Plug-Ins/VST3//$(basename \"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\")\"\n  echo Running rm -rf \\\"${destinationPlugin}\\\"\n  rm -rf \"${destinationPlugin}\"\n  echo Running ditto \\\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\\\" \\\"${destinationPlugin}\\\"\n  ditto \"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\" \"${destinationPlugin}\"\n\n  if [[ -n \"${EXPANDED_CODE_SIGN_IDENTITY-}\" ]]; then\n    if [[ -n \"${CODE_SIGN_ENTITLEMENTS-}\" ]]; then\n      entitlementsArg=(--entitlements \"${CODE_SIGN_ENTITLEMENTS}\")\n    fi\n\n    echo Signing Identity: \\\"${EXPANDED_CODE_SIGN_IDENTITY_NAME}\\\"\n    echo Running codesign --verbose=4 --force --sign \\\"${EXPANDED_CODE_SIGN_IDENTITY}\\\" ${entitlementsArg[*]-} ${OTHER_CODE_SIGN_FLAGS-} \\\"${HOME}/Library/Audio/Plug-Ins/VST3//${WRAPPER_NAME}\\\"\n    codesign --verbose=4 --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" ${entitlementsArg[*]-} ${OTHER_CODE_SIGN_FLAGS-} \"${HOME}/Library/Audio/Plug-Ins/VST3//${WRAPPER_NAME}\"\n  fi\nfi\n";
+		};
+		34F9DE7FA7DDE774D3F1316B /* Update manifest */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Update manifest";
+			alwaysOutOfDate = 1;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\necho Running codesign --verbose=4 --force --sign - \\\"${CONFIGURATION_BUILD_DIR}/${WRAPPER_NAME}\\\"\ncodesign --verbose=4 --force --sign - \"${CONFIGURATION_BUILD_DIR}/${WRAPPER_NAME}\"\n\necho Running \\\"${CONFIGURATION_BUILD_DIR}/juce_vst3_helper\\\" -create -version \\\"1.0.0\\\" -path \\\"${CONFIGURATION_BUILD_DIR}/${WRAPPER_NAME}\\\" -output \\\"${CONFIGURATION_BUILD_DIR}/${WRAPPER_NAME}/Contents/Resources/moduleinfo.json\\\"\n\"${CONFIGURATION_BUILD_DIR}/juce_vst3_helper\" -create -version \"1.0.0\" -path \"${CONFIGURATION_BUILD_DIR}/${WRAPPER_NAME}\" -output \"${CONFIGURATION_BUILD_DIR}/${WRAPPER_NAME}/Contents/Resources/moduleinfo.json\"\n";
+		};
+		7AC94DE9EBC1531968BF83BA /* Plugin Copy Step */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			name = "Plugin Copy Step";
+			alwaysOutOfDate = 1;
+			shellPath = /bin/sh;
+			shellScript = "set -euo pipefail\n\nif [[ \"${CONFIGURATION}\" == \"Debug\" ]]; then\n  destinationPlugin=\"${HOME}/Library/Audio/Plug-Ins/Components//$(basename \"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\")\"\n  echo Running rm -rf \\\"${destinationPlugin}\\\"\n  rm -rf \"${destinationPlugin}\"\n  echo Running ditto \\\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\\\" \\\"${destinationPlugin}\\\"\n  ditto \"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\" \"${destinationPlugin}\"\n\n  if [[ -n \"${EXPANDED_CODE_SIGN_IDENTITY-}\" ]]; then\n    if [[ -n \"${CODE_SIGN_ENTITLEMENTS-}\" ]]; then\n      entitlementsArg=(--entitlements \"${CODE_SIGN_ENTITLEMENTS}\")\n    fi\n\n    echo Signing Identity: \\\"${EXPANDED_CODE_SIGN_IDENTITY_NAME}\\\"\n    echo Running codesign --verbose=4 --force --sign \\\"${EXPANDED_CODE_SIGN_IDENTITY}\\\" ${entitlementsArg[*]-} ${OTHER_CODE_SIGN_FLAGS-} \\\"${HOME}/Library/Audio/Plug-Ins/Components//${WRAPPER_NAME}\\\"\n    codesign --verbose=4 --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" ${entitlementsArg[*]-} ${OTHER_CODE_SIGN_FLAGS-} \"${HOME}/Library/Audio/Plug-Ins/Components//${WRAPPER_NAME}\"\n  fi\nfi\n\nif [[ \"${CONFIGURATION}\" == \"Release\" ]]; then\n  destinationPlugin=\"${HOME}/Library/Audio/Plug-Ins/Components//$(basename \"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\")\"\n  echo Running rm -rf \\\"${destinationPlugin}\\\"\n  rm -rf \"${destinationPlugin}\"\n  echo Running ditto \\\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\\\" \\\"${destinationPlugin}\\\"\n  ditto \"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\" \"${destinationPlugin}\"\n\n  if [[ -n \"${EXPANDED_CODE_SIGN_IDENTITY-}\" ]]; then\n    if [[ -n \"${CODE_SIGN_ENTITLEMENTS-}\" ]]; then\n      entitlementsArg=(--entitlements \"${CODE_SIGN_ENTITLEMENTS}\")\n    fi\n\n    echo Signing Identity: \\\"${EXPANDED_CODE_SIGN_IDENTITY_NAME}\\\"\n    echo Running codesign --verbose=4 --force --sign \\\"${EXPANDED_CODE_SIGN_IDENTITY}\\\" ${entitlementsArg[*]-} ${OTHER_CODE_SIGN_FLAGS-} \\\"${HOME}/Library/Audio/Plug-Ins/Components//${WRAPPER_NAME}\\\"\n    codesign --verbose=4 --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" ${entitlementsArg[*]-} ${OTHER_CODE_SIGN_FLAGS-} \"${HOME}/Library/Audio/Plug-Ins/Components//${WRAPPER_NAME}\"\n  fi\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		083D076FAE9C2007D48FF58F /* Sources */ = {
+		083D076FAE9C2007D48FF58F = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C50EDE48C62D96913E5BB745 /* include_juce_audio_plugin_client_Standalone.cpp in Sources */,
+				C50EDE48C62D96913E5BB745,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F30D10165290365B555B91C /* Sources */ = {
+		1F30D10165290365B555B91C = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D8A902A9F87183A62BC234D /* include_juce_audio_plugin_client_Unity.cpp in Sources */,
+				2D8A902A9F87183A62BC234D,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B14DA74B627C9AF0757A38B /* Sources */ = {
+		4B14DA74B627C9AF0757A38B = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2924A10A6ECE2F03751EC097 /* LipModel.cpp in Sources */,
-				C6F66186267078C461E69788 /* LowPass.cpp in Sources */,
-				C6AC7102368DD3CA6BB9CBDF /* Trombone.cpp in Sources */,
-				75741631EDE23CCF17036781 /* Tube.cpp in Sources */,
-				9426A9D426CF8EB31AD41239 /* PluginProcessor.cpp in Sources */,
-				D9621360D6D804C6A1AAD1B3 /* PluginEditor.cpp in Sources */,
-				F9FC4050B5F78B9DBDADB821 /* include_juce_audio_basics.mm in Sources */,
-				5F2F6CEC6616A7DD47A017BE /* include_juce_audio_devices.mm in Sources */,
-				B34285A0D954B9BABDFEB33C /* include_juce_audio_formats.mm in Sources */,
-				E4BFEC4B15623966178986C4 /* include_juce_audio_plugin_client_utils.cpp in Sources */,
-				B1B4EFDABE0E87EA63491675 /* include_juce_audio_plugin_client_VST_utils.mm in Sources */,
-				2834FE991C8F9864E55A75C2 /* include_juce_audio_processors.mm in Sources */,
-				AE15A45E353A75A11673CD78 /* include_juce_audio_utils.mm in Sources */,
-				4004A3EB47E887654C85D27D /* include_juce_core.mm in Sources */,
-				62FE8B9C45F68FA2AF7368A3 /* include_juce_data_structures.mm in Sources */,
-				F761C5D0BB96CB9F92305012 /* include_juce_events.mm in Sources */,
-				D28FED6239E5E7166A9E5A17 /* include_juce_graphics.mm in Sources */,
-				744298BB86B9D01F1C0F4D96 /* include_juce_gui_basics.mm in Sources */,
-				9FF1D40B37D1F65EB73D718D /* include_juce_gui_extra.mm in Sources */,
+				2924A10A6ECE2F03751EC097,
+				C6F66186267078C461E69788,
+				C6AC7102368DD3CA6BB9CBDF,
+				75741631EDE23CCF17036781,
+				9426A9D426CF8EB31AD41239,
+				D9621360D6D804C6A1AAD1B3,
+				F9FC4050B5F78B9DBDADB821,
+				5F2F6CEC6616A7DD47A017BE,
+				B34285A0D954B9BABDFEB33C,
+				589AE6215AF9B17EC2BEE207,
+				2834FE991C8F9864E55A75C2,
+				C35148EDA4CCEF7744D972A8,
+				F33ED98226D99F85AB8FB49D,
+				AE15A45E353A75A11673CD78,
+				4004A3EB47E887654C85D27D,
+				BCAA87A33AD5EEF3D81B602D,
+				62FE8B9C45F68FA2AF7368A3,
+				F761C5D0BB96CB9F92305012,
+				D28FED6239E5E7166A9E5A17,
+				F88311DCC94113FEB7F18055,
+				68B801607E5C745EBE8A47F7,
+				744298BB86B9D01F1C0F4D96,
+				9FF1D40B37D1F65EB73D718D,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		666B9D421EC74E6F8292A26F = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F819C0394999657F3BE02BD3,
+				083FCD6BDEF8E84567309073,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EBF8CC66ABB7F251188DC4B = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97EDD83744931991EB7C590A,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BABE15EE5D8DE5AA6F2B49BB = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				901BEAB0B5C30BBB129CEBD2,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		03C508FBA5EC0040FEBC5702 /* PBXTargetDependency */ = {
+		03C508FBA5EC0040FEBC5702 = {
 			isa = PBXTargetDependency;
-			target = 7E8AB29BC3A2B6B62CB7D2AC /* TrombonePlugin - Shared Code */;
-			targetProxy = AA2B4F4B26D29CDA0005662C /* PBXContainerItemProxy */;
+			target = 7E8AB29BC3A2B6B62CB7D2AC;
 		};
-		315F7E476925650649D26964 /* PBXTargetDependency */ = {
+		315F7E476925650649D26964 = {
 			isa = PBXTargetDependency;
-			target = 7E8AB29BC3A2B6B62CB7D2AC /* TrombonePlugin - Shared Code */;
-			targetProxy = AA2B4F4726D29CDA0005662C /* PBXContainerItemProxy */;
+			target = 7E8AB29BC3A2B6B62CB7D2AC;
 		};
-		B11C6411B9C6CC161E4C47AB /* PBXTargetDependency */ = {
+		43E54E84436BAB67C370B309 = {
 			isa = PBXTargetDependency;
-			target = 7E8AB29BC3A2B6B62CB7D2AC /* TrombonePlugin - Shared Code */;
-			targetProxy = AA2B4F4826D29CDA0005662C /* PBXContainerItemProxy */;
+			target = 6DB01A54AD0F78612D740C59;
 		};
-		C16F06F16E72CDE3662956E6 /* PBXTargetDependency */ = {
+		5FEDAE9CD009506AED53429D = {
 			isa = PBXTargetDependency;
-			target = 52221FE6605E158A79C2B366 /* TrombonePlugin - Unity Plugin */;
-			targetProxy = AA2B4F4A26D29CDA0005662C /* PBXContainerItemProxy */;
+			target = 7E8AB29BC3A2B6B62CB7D2AC;
 		};
-		D71FC3D9F80EA8F0D5F4A3D3 /* PBXTargetDependency */ = {
+		793D6C6FF30218D0B93A381C = {
 			isa = PBXTargetDependency;
-			target = DE3D949C8BCCDF31A42A005B /* TrombonePlugin - Standalone Plugin */;
-			targetProxy = AA2B4F4926D29CDA0005662C /* PBXContainerItemProxy */;
+			target = 7E8AB29BC3A2B6B62CB7D2AC;
+		};
+		B11C6411B9C6CC161E4C47AB = {
+			isa = PBXTargetDependency;
+			target = 7E8AB29BC3A2B6B62CB7D2AC;
+		};
+		C16F06F16E72CDE3662956E6 = {
+			isa = PBXTargetDependency;
+			target = 52221FE6605E158A79C2B366;
+		};
+		C40B732EA9CDE6D9F1B53C9F = {
+			isa = PBXTargetDependency;
+			target = 6F2E8A7E0B0F167CB65118F9;
+		};
+		CF4269010DC166F98BC650E5 = {
+			isa = PBXTargetDependency;
+			target = 835C7F1EDF1895AB407DB92A;
+		};
+		D71FC3D9F80EA8F0D5F4A3D3 = {
+			isa = PBXTargetDependency;
+			target = DE3D949C8BCCDF31A42A005B;
+		};
+		E9BDE86C887765F210EDB3C8 = {
+			isa = PBXTargetDependency;
+			target = 6DB01A54AD0F78612D740C59;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0526AAC852DBA88EB831A9B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCE_PROJUCER_VERSION=0x80008",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"TrombonePlugin\\\"",
+					"JucePlugin_Desc=\\\"TrombonePlugin\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x51376665",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=TrombonePluginAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"TrombonePluginAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.TrombonePlugin",
+					"JucePlugin_AAXIdentifier=com.yourcompany.TrombonePlugin",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ TrombonePlugin\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.TrombonePlugin.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.TrombonePlugin.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"/Users/silvinwillemsen/repositories/JUCE/modules",
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-AU.plist;
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/Components/";
+				LIBRARY_STYLE = Bundle;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode /Users/silvinwillemsen/repositories/JUCE/modules /Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU";
+				OTHER_LDFLAGS = "-bundle -lTrombonePlugin";
+				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -d arm64_$arm64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\" -I \"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioUnit.framework/Headers\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.TrombonePlugin;
+				PRODUCT_NAME = "TrombonePlugin";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+				WRAPPER_EXTENSION = component;
+			};
+			name = Debug;
+		};
+		08FE3D2BE0D5C8D4A26B3105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCE_PROJUCER_VERSION=0x80008",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"TrombonePlugin\\\"",
+					"JucePlugin_Desc=\\\"TrombonePlugin\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x51376665",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=TrombonePluginAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"TrombonePluginAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.TrombonePlugin",
+					"JucePlugin_AAXIdentifier=com.yourcompany.TrombonePlugin",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ TrombonePlugin\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.TrombonePlugin.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.TrombonePlugin.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"/Users/silvinwillemsen/repositories/JUCE/modules",
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-AU.plist;
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/Components/";
+				LIBRARY_STYLE = Bundle;
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode /Users/silvinwillemsen/repositories/JUCE/modules /Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU";
+				OTHER_LDFLAGS = "-bundle -lTrombonePlugin";
+				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -d arm64_$arm64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\" -I \"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioUnit.framework/Headers\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.TrombonePlugin;
+				PRODUCT_NAME = "TrombonePlugin";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+				WRAPPER_EXTENSION = component;
+			};
+			name = Release;
+		};
 		23EE33CA9E6EF11916F67A0F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -644,7 +1162,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = NO;
@@ -664,7 +1181,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = TrombonePlugin;
+				OTHER_CODE_SIGN_FLAGS = --timestamp;
+				PRODUCT_NAME = "TrombonePlugin";
 				SDKROOT = macosx;
 				WARNING_CFLAGS = "-Wreorder";
 				ZERO_LINK = NO;
@@ -674,21 +1192,19 @@
 		2A0FFEA4F0913089CFE0D1CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
-				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
 				COPY_PHASE_STRIP = NO;
+				EXCLUDED_ARCHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_DEBUG=1",
 					"DEBUG=1",
-					"JUCE_DISPLAY_SPLASH_SCREEN=1",
-					"JUCE_USE_DARK_SPLASH_SCREEN=1",
-					"JUCE_PROJUCER_VERSION=0x60008",
+					"JUCE_PROJUCER_VERSION=0x80008",
 					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
@@ -708,15 +1224,16 @@
 					"JucePlugin_Build_VST3=0",
 					"JucePlugin_Build_AU=0",
 					"JucePlugin_Build_AUv3=0",
-					"JucePlugin_Build_RTAS=0",
 					"JucePlugin_Build_AAX=0",
 					"JucePlugin_Build_Standalone=0",
 					"JucePlugin_Build_Unity=1",
+					"JucePlugin_Build_LV2=0",
 					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
 					"JucePlugin_Name=\\\"TrombonePlugin\\\"",
 					"JucePlugin_Desc=\\\"TrombonePlugin\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x51376665",
@@ -731,17 +1248,12 @@
 					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
 					"JucePlugin_VSTCategory=kPlugCategEffect",
 					"JucePlugin_Vst3Category=\\\"Fx\\\"",
-					"JucePlugin_AUMainType='aufx'",
+					"JucePlugin_AUMainType=\\'aufx\\'",
 					"JucePlugin_AUSubType=JucePlugin_PluginCode",
 					"JucePlugin_AUExportPrefix=TrombonePluginAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"TrombonePluginAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_CFBundleIdentifier=com.yourcompany.TrombonePlugin",
-					"JucePlugin_RTASCategory=0",
-					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
-					"JucePlugin_RTASDisableBypass=0",
-					"JucePlugin_RTASDisableMultiMono=0",
 					"JucePlugin_AAXIdentifier=com.yourcompany.TrombonePlugin",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
@@ -753,6 +1265,11 @@
 					"JucePlugin_IAAName=\\\"yourcompany:\\ TrombonePlugin\\\"",
 					"JucePlugin_VSTNumMidiInputs=16",
 					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.TrombonePlugin.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.TrombonePlugin.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
 					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
 					"JUCER_XCODE_MAC_F6D2F4CF=1",
 					"JUCE_APP_VERSION=1.0.0",
@@ -761,22 +1278,20 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GENERATE_PKGINFO_FILE = YES;
 				HEADER_SEARCH_PATHS = (
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
 					"$(SRCROOT)/../../JuceLibraryCode",
-					/Users/SilvinW/repositories/newJUCE/JUCE/modules,
-					/Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_audio_plugin_client,
+					"/Users/silvinwillemsen/repositories/JUCE/modules",
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Info-Unity_Plugin.plist";
+				INFOPLIST_FILE = Info-Unity_Plugin.plist;
 				INFOPLIST_PREPROCESS = NO;
 				LIBRARY_STYLE = Bundle;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../JuceLibraryCode /Users/SilvinW/repositories/newJUCE/JUCE/modules /Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_audio_plugin_client";
-				OTHER_LDFLAGS = (
-					"-bundle",
-					"-lTrombonePlugin",
-				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode /Users/silvinwillemsen/repositories/JUCE/modules /Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU";
+				OTHER_LDFLAGS = "-bundle -lTrombonePlugin";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.TrombonePlugin;
-				PRODUCT_NAME = audioplugin_TrombonePlugin;
+				PRODUCT_NAME = "audioplugin_TrombonePlugin";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
 				WRAPPER_EXTENSION = bundle;
@@ -805,7 +1320,6 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = NO;
@@ -824,7 +1338,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PRODUCT_NAME = TrombonePlugin;
+				OTHER_CODE_SIGN_FLAGS = --timestamp;
+				PRODUCT_NAME = "TrombonePlugin";
 				SDKROOT = macosx;
 				WARNING_CFLAGS = "-Wreorder";
 				ZERO_LINK = NO;
@@ -834,7 +1349,7 @@
 		56EB12AB4522200EAAE9A0D5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -842,21 +1357,19 @@
 		6A5C65CDA1E86F86BCCFCEFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
-				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
 				DEAD_CODE_STRIPPING = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_NDEBUG=1",
 					"NDEBUG=1",
-					"JUCE_DISPLAY_SPLASH_SCREEN=1",
-					"JUCE_USE_DARK_SPLASH_SCREEN=1",
-					"JUCE_PROJUCER_VERSION=0x60008",
+					"JUCE_PROJUCER_VERSION=0x80008",
 					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
@@ -876,15 +1389,16 @@
 					"JucePlugin_Build_VST3=0",
 					"JucePlugin_Build_AU=0",
 					"JucePlugin_Build_AUv3=0",
-					"JucePlugin_Build_RTAS=0",
 					"JucePlugin_Build_AAX=0",
 					"JucePlugin_Build_Standalone=0",
 					"JucePlugin_Build_Unity=1",
+					"JucePlugin_Build_LV2=0",
 					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
 					"JucePlugin_Name=\\\"TrombonePlugin\\\"",
 					"JucePlugin_Desc=\\\"TrombonePlugin\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x51376665",
@@ -899,17 +1413,12 @@
 					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
 					"JucePlugin_VSTCategory=kPlugCategEffect",
 					"JucePlugin_Vst3Category=\\\"Fx\\\"",
-					"JucePlugin_AUMainType='aufx'",
+					"JucePlugin_AUMainType=\\'aufx\\'",
 					"JucePlugin_AUSubType=JucePlugin_PluginCode",
 					"JucePlugin_AUExportPrefix=TrombonePluginAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"TrombonePluginAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_CFBundleIdentifier=com.yourcompany.TrombonePlugin",
-					"JucePlugin_RTASCategory=0",
-					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
-					"JucePlugin_RTASDisableBypass=0",
-					"JucePlugin_RTASDisableMultiMono=0",
 					"JucePlugin_AAXIdentifier=com.yourcompany.TrombonePlugin",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
@@ -921,6 +1430,11 @@
 					"JucePlugin_IAAName=\\\"yourcompany:\\ TrombonePlugin\\\"",
 					"JucePlugin_VSTNumMidiInputs=16",
 					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.TrombonePlugin.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.TrombonePlugin.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
 					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
 					"JUCER_XCODE_MAC_F6D2F4CF=1",
 					"JUCE_APP_VERSION=1.0.0",
@@ -929,23 +1443,21 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GENERATE_PKGINFO_FILE = YES;
 				HEADER_SEARCH_PATHS = (
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
 					"$(SRCROOT)/../../JuceLibraryCode",
-					/Users/SilvinW/repositories/newJUCE/JUCE/modules,
-					/Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_audio_plugin_client,
+					"/Users/silvinwillemsen/repositories/JUCE/modules",
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Info-Unity_Plugin.plist";
+				INFOPLIST_FILE = Info-Unity_Plugin.plist;
 				INFOPLIST_PREPROCESS = NO;
 				LIBRARY_STYLE = Bundle;
 				LLVM_LTO = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../JuceLibraryCode /Users/SilvinW/repositories/newJUCE/JUCE/modules /Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_audio_plugin_client";
-				OTHER_LDFLAGS = (
-					"-bundle",
-					"-lTrombonePlugin",
-				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode /Users/silvinwillemsen/repositories/JUCE/modules /Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU";
+				OTHER_LDFLAGS = "-bundle -lTrombonePlugin";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.TrombonePlugin;
-				PRODUCT_NAME = audioplugin_TrombonePlugin;
+				PRODUCT_NAME = "audioplugin_TrombonePlugin";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
 				WRAPPER_EXTENSION = bundle;
@@ -955,21 +1467,19 @@
 		6FE7A08655AC40CF58BAB638 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
-				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
 				DEAD_CODE_STRIPPING = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_NDEBUG=1",
 					"NDEBUG=1",
-					"JUCE_DISPLAY_SPLASH_SCREEN=1",
-					"JUCE_USE_DARK_SPLASH_SCREEN=1",
-					"JUCE_PROJUCER_VERSION=0x60008",
+					"JUCE_PROJUCER_VERSION=0x80008",
 					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
@@ -989,15 +1499,16 @@
 					"JucePlugin_Build_VST3=0",
 					"JucePlugin_Build_AU=0",
 					"JucePlugin_Build_AUv3=0",
-					"JucePlugin_Build_RTAS=0",
 					"JucePlugin_Build_AAX=0",
 					"JucePlugin_Build_Standalone=1",
 					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
 					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
 					"JucePlugin_Name=\\\"TrombonePlugin\\\"",
 					"JucePlugin_Desc=\\\"TrombonePlugin\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x51376665",
@@ -1012,17 +1523,12 @@
 					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
 					"JucePlugin_VSTCategory=kPlugCategEffect",
 					"JucePlugin_Vst3Category=\\\"Fx\\\"",
-					"JucePlugin_AUMainType='aufx'",
+					"JucePlugin_AUMainType=\\'aufx\\'",
 					"JucePlugin_AUSubType=JucePlugin_PluginCode",
 					"JucePlugin_AUExportPrefix=TrombonePluginAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"TrombonePluginAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_CFBundleIdentifier=com.yourcompany.TrombonePlugin",
-					"JucePlugin_RTASCategory=0",
-					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
-					"JucePlugin_RTASDisableBypass=0",
-					"JucePlugin_RTASDisableMultiMono=0",
 					"JucePlugin_AAXIdentifier=com.yourcompany.TrombonePlugin",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
@@ -1034,6 +1540,11 @@
 					"JucePlugin_IAAName=\\\"yourcompany:\\ TrombonePlugin\\\"",
 					"JucePlugin_VSTNumMidiInputs=16",
 					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.TrombonePlugin.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.TrombonePlugin.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
 					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
 					"JUCER_XCODE_MAC_F6D2F4CF=1",
 					"JUCE_APP_VERSION=1.0.0",
@@ -1041,42 +1552,41 @@
 				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = (
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
 					"$(SRCROOT)/../../JuceLibraryCode",
-					/Users/SilvinW/repositories/newJUCE/JUCE/modules,
-					/Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_audio_plugin_client,
+					"/Users/silvinwillemsen/repositories/JUCE/modules",
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Info-Standalone_Plugin.plist";
+				INFOPLIST_FILE = Info-Standalone_Plugin.plist;
 				INFOPLIST_PREPROCESS = NO;
 				LLVM_LTO = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../JuceLibraryCode /Users/SilvinW/repositories/newJUCE/JUCE/modules /Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_audio_plugin_client";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode /Users/silvinwillemsen/repositories/JUCE/modules /Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU";
 				OTHER_LDFLAGS = "-lTrombonePlugin";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.TrombonePlugin;
-				PRODUCT_NAME = TrombonePlugin;
+				PRODUCT_NAME = "TrombonePlugin";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
 			};
 			name = Release;
 		};
-		B49FF5BB25286A6BD9703C6D /* Debug */ = {
+		847010AA82A3732CCB0D6CE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
-				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				DEAD_CODE_STRIPPING = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"_DEBUG=1",
-					"DEBUG=1",
-					"JUCE_DISPLAY_SPLASH_SCREEN=1",
-					"JUCE_USE_DARK_SPLASH_SCREEN=1",
-					"JUCE_PROJUCER_VERSION=0x60008",
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCE_PROJUCER_VERSION=0x80008",
 					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
@@ -1096,15 +1606,16 @@
 					"JucePlugin_Build_VST3=0",
 					"JucePlugin_Build_AU=0",
 					"JucePlugin_Build_AUv3=0",
-					"JucePlugin_Build_RTAS=0",
 					"JucePlugin_Build_AAX=0",
-					"JucePlugin_Build_Standalone=1",
+					"JucePlugin_Build_Standalone=0",
 					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
 					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
 					"JucePlugin_Name=\\\"TrombonePlugin\\\"",
 					"JucePlugin_Desc=\\\"TrombonePlugin\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x51376665",
@@ -1119,17 +1630,12 @@
 					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
 					"JucePlugin_VSTCategory=kPlugCategEffect",
 					"JucePlugin_Vst3Category=\\\"Fx\\\"",
-					"JucePlugin_AUMainType='aufx'",
+					"JucePlugin_AUMainType=\\'aufx\\'",
 					"JucePlugin_AUSubType=JucePlugin_PluginCode",
 					"JucePlugin_AUExportPrefix=TrombonePluginAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"TrombonePluginAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_CFBundleIdentifier=com.yourcompany.TrombonePlugin",
-					"JucePlugin_RTASCategory=0",
-					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
-					"JucePlugin_RTASDisableBypass=0",
-					"JucePlugin_RTASDisableMultiMono=0",
 					"JucePlugin_AAXIdentifier=com.yourcompany.TrombonePlugin",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
@@ -1141,6 +1647,11 @@
 					"JucePlugin_IAAName=\\\"yourcompany:\\ TrombonePlugin\\\"",
 					"JucePlugin_VSTNumMidiInputs=16",
 					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.TrombonePlugin.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.TrombonePlugin.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
 					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
 					"JUCER_XCODE_MAC_F6D2F4CF=1",
 					"JUCE_APP_VERSION=1.0.0",
@@ -1148,18 +1659,235 @@
 				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = (
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
 					"$(SRCROOT)/../../JuceLibraryCode",
-					/Users/SilvinW/repositories/newJUCE/JUCE/modules,
-					/Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_audio_plugin_client,
+					"/Users/silvinwillemsen/repositories/JUCE/modules",
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Info-Standalone_Plugin.plist";
+				INFOPLIST_FILE = Info-VST3_Manifest_Helper.plist;
 				INFOPLIST_PREPROCESS = NO;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../JuceLibraryCode /Users/SilvinW/repositories/newJUCE/JUCE/modules /Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_audio_plugin_client";
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode /Users/silvinwillemsen/repositories/JUCE/modules /Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.TrombonePlugin;
+				PRODUCT_NAME = "juce_vst3_helper";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Release;
+		};
+		8F940B6FAECC1FC2B2DA9011 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCE_PROJUCER_VERSION=0x80008",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=1",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"TrombonePlugin\\\"",
+					"JucePlugin_Desc=\\\"TrombonePlugin\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x51376665",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=TrombonePluginAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"TrombonePluginAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.TrombonePlugin",
+					"JucePlugin_AAXIdentifier=com.yourcompany.TrombonePlugin",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ TrombonePlugin\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.TrombonePlugin.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.TrombonePlugin.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"/Users/silvinwillemsen/repositories/JUCE/modules",
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-VST3.plist;
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/VST3/";
+				LIBRARY_STYLE = Bundle;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode /Users/silvinwillemsen/repositories/JUCE/modules /Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU";
+				OTHER_LDFLAGS = "-bundle -lTrombonePlugin";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.TrombonePlugin;
+				PRODUCT_NAME = "TrombonePlugin";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+				WRAPPER_EXTENSION = vst3;
+			};
+			name = Debug;
+		};
+		B49FF5BB25286A6BD9703C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCE_PROJUCER_VERSION=0x80008",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=0",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=1",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"TrombonePlugin\\\"",
+					"JucePlugin_Desc=\\\"TrombonePlugin\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x51376665",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=TrombonePluginAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"TrombonePluginAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.TrombonePlugin",
+					"JucePlugin_AAXIdentifier=com.yourcompany.TrombonePlugin",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ TrombonePlugin\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.TrombonePlugin.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.TrombonePlugin.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"/Users/silvinwillemsen/repositories/JUCE/modules",
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-Standalone_Plugin.plist;
+				INFOPLIST_PREPROCESS = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode /Users/silvinwillemsen/repositories/JUCE/modules /Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU";
 				OTHER_LDFLAGS = "-lTrombonePlugin";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.TrombonePlugin;
-				PRODUCT_NAME = TrombonePlugin;
+				PRODUCT_NAME = "TrombonePlugin";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
 			};
@@ -1168,21 +1896,19 @@
 		D4B393716109C418B325F5B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
-				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
 				COPY_PHASE_STRIP = NO;
+				EXCLUDED_ARCHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_DEBUG=1",
 					"DEBUG=1",
-					"JUCE_DISPLAY_SPLASH_SCREEN=1",
-					"JUCE_USE_DARK_SPLASH_SCREEN=1",
-					"JUCE_PROJUCER_VERSION=0x60008",
+					"JUCE_PROJUCER_VERSION=0x80008",
 					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
@@ -1199,18 +1925,19 @@
 					"JUCE_VST3_CAN_REPLACE_VST2=0",
 					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
 					"JucePlugin_Build_VST=0",
-					"JucePlugin_Build_VST3=0",
-					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_VST3=1",
+					"JucePlugin_Build_AU=1",
 					"JucePlugin_Build_AUv3=0",
-					"JucePlugin_Build_RTAS=0",
 					"JucePlugin_Build_AAX=0",
 					"JucePlugin_Build_Standalone=1",
 					"JucePlugin_Build_Unity=1",
+					"JucePlugin_Build_LV2=0",
 					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
 					"JucePlugin_Name=\\\"TrombonePlugin\\\"",
 					"JucePlugin_Desc=\\\"TrombonePlugin\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x51376665",
@@ -1225,17 +1952,12 @@
 					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
 					"JucePlugin_VSTCategory=kPlugCategEffect",
 					"JucePlugin_Vst3Category=\\\"Fx\\\"",
-					"JucePlugin_AUMainType='aufx'",
+					"JucePlugin_AUMainType=\\'aufx\\'",
 					"JucePlugin_AUSubType=JucePlugin_PluginCode",
 					"JucePlugin_AUExportPrefix=TrombonePluginAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"TrombonePluginAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_CFBundleIdentifier=com.yourcompany.TrombonePlugin",
-					"JucePlugin_RTASCategory=0",
-					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
-					"JucePlugin_RTASDisableBypass=0",
-					"JucePlugin_RTASDisableMultiMono=0",
 					"JucePlugin_AAXIdentifier=com.yourcompany.TrombonePlugin",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
@@ -1247,6 +1969,11 @@
 					"JucePlugin_IAAName=\\\"yourcompany:\\ TrombonePlugin\\\"",
 					"JucePlugin_VSTNumMidiInputs=16",
 					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.TrombonePlugin.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.TrombonePlugin.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
 					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
 					"JUCER_XCODE_MAC_F6D2F4CF=1",
 					"JUCE_APP_VERSION=1.0.0",
@@ -1255,16 +1982,17 @@
 				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = (
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
 					"$(SRCROOT)/../../JuceLibraryCode",
-					/Users/SilvinW/repositories/newJUCE/JUCE/modules,
-					/Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_audio_plugin_client,
+					"/Users/silvinwillemsen/repositories/JUCE/modules",
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU",
 					"$(inherited)",
 				);
 				INSTALL_PATH = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../JuceLibraryCode /Users/SilvinW/repositories/newJUCE/JUCE/modules /Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_audio_plugin_client";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode /Users/silvinwillemsen/repositories/JUCE/modules /Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.TrombonePlugin;
-				PRODUCT_NAME = TrombonePlugin;
+				PRODUCT_NAME = "TrombonePlugin";
 				SKIP_INSTALL = YES;
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
@@ -1274,21 +2002,126 @@
 		E10B91A1F774EA7104451AE4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_LINK_OBJC_RUNTIME = NO;
-				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
 				DEAD_CODE_STRIPPING = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_NDEBUG=1",
 					"NDEBUG=1",
-					"JUCE_DISPLAY_SPLASH_SCREEN=1",
-					"JUCE_USE_DARK_SPLASH_SCREEN=1",
-					"JUCE_PROJUCER_VERSION=0x60008",
+					"JUCE_PROJUCER_VERSION=0x80008",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=1",
+					"JucePlugin_Build_AU=1",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=1",
+					"JucePlugin_Build_Unity=1",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"TrombonePlugin\\\"",
+					"JucePlugin_Desc=\\\"TrombonePlugin\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x51376665",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=TrombonePluginAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"TrombonePluginAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.TrombonePlugin",
+					"JucePlugin_AAXIdentifier=com.yourcompany.TrombonePlugin",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ TrombonePlugin\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.TrombonePlugin.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.TrombonePlugin.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+					"JUCE_SHARED_CODE=1",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"/Users/silvinwillemsen/repositories/JUCE/modules",
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU",
+					"$(inherited)",
+				);
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode /Users/silvinwillemsen/repositories/JUCE/modules /Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.TrombonePlugin;
+				PRODUCT_NAME = "TrombonePlugin";
+				SKIP_INSTALL = YES;
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Release;
+		};
+		E40DC175D32E50AE3B32951B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_ARCHS = "";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_DEBUG=1",
+					"DEBUG=1",
+					"JUCE_PROJUCER_VERSION=0x80008",
 					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
@@ -1308,15 +2141,16 @@
 					"JucePlugin_Build_VST3=0",
 					"JucePlugin_Build_AU=0",
 					"JucePlugin_Build_AUv3=0",
-					"JucePlugin_Build_RTAS=0",
 					"JucePlugin_Build_AAX=0",
-					"JucePlugin_Build_Standalone=1",
-					"JucePlugin_Build_Unity=1",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
 					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
 					"JucePlugin_Name=\\\"TrombonePlugin\\\"",
 					"JucePlugin_Desc=\\\"TrombonePlugin\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x51376665",
@@ -1331,17 +2165,12 @@
 					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
 					"JucePlugin_VSTCategory=kPlugCategEffect",
 					"JucePlugin_Vst3Category=\\\"Fx\\\"",
-					"JucePlugin_AUMainType='aufx'",
+					"JucePlugin_AUMainType=\\'aufx\\'",
 					"JucePlugin_AUSubType=JucePlugin_PluginCode",
 					"JucePlugin_AUExportPrefix=TrombonePluginAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"TrombonePluginAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_CFBundleIdentifier=com.yourcompany.TrombonePlugin",
-					"JucePlugin_RTASCategory=0",
-					"JucePlugin_RTASManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_RTASProductId=JucePlugin_PluginCode",
-					"JucePlugin_RTASDisableBypass=0",
-					"JucePlugin_RTASDisableMultiMono=0",
 					"JucePlugin_AAXIdentifier=com.yourcompany.TrombonePlugin",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
@@ -1353,35 +2182,150 @@
 					"JucePlugin_IAAName=\\\"yourcompany:\\ TrombonePlugin\\\"",
 					"JucePlugin_VSTNumMidiInputs=16",
 					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.TrombonePlugin.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.TrombonePlugin.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
 					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
 					"JUCER_XCODE_MAC_F6D2F4CF=1",
 					"JUCE_APP_VERSION=1.0.0",
 					"JUCE_APP_VERSION_HEX=0x10000",
-					"JUCE_SHARED_CODE=1",
 				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = (
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
 					"$(SRCROOT)/../../JuceLibraryCode",
-					/Users/SilvinW/repositories/newJUCE/JUCE/modules,
-					/Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_audio_plugin_client,
+					"/Users/silvinwillemsen/repositories/JUCE/modules",
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU",
 					"$(inherited)",
 				);
-				INSTALL_PATH = "@executable_path/../Frameworks";
-				LLVM_LTO = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../JuceLibraryCode /Users/SilvinW/repositories/newJUCE/JUCE/modules /Users/SilvinW/repositories/newJUCE/JUCE/modules/juce_audio_plugin_client";
+				INFOPLIST_FILE = Info-VST3_Manifest_Helper.plist;
+				INFOPLIST_PREPROCESS = NO;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode /Users/silvinwillemsen/repositories/JUCE/modules /Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.TrombonePlugin;
-				PRODUCT_NAME = TrombonePlugin;
-				SKIP_INSTALL = YES;
+				PRODUCT_NAME = "juce_vst3_helper";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+			};
+			name = Debug;
+		};
+		E5462C806B138D3EA89FF688 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(PROJECT_DIR)/build/$(CONFIGURATION)";
+				DEAD_CODE_STRIPPING = YES;
+				EXCLUDED_ARCHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_NDEBUG=1",
+					"NDEBUG=1",
+					"JUCE_PROJUCER_VERSION=0x80008",
+					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_plugin_client=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_processors=1",
+					"JUCE_MODULE_AVAILABLE_juce_audio_utils=1",
+					"JUCE_MODULE_AVAILABLE_juce_core=1",
+					"JUCE_MODULE_AVAILABLE_juce_data_structures=1",
+					"JUCE_MODULE_AVAILABLE_juce_events=1",
+					"JUCE_MODULE_AVAILABLE_juce_graphics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_basics=1",
+					"JUCE_MODULE_AVAILABLE_juce_gui_extra=1",
+					"JUCE_GLOBAL_MODULE_SETTINGS_INCLUDED=1",
+					"JUCE_VST3_CAN_REPLACE_VST2=0",
+					"JUCE_STRICT_REFCOUNTEDPOINTER=1",
+					"JucePlugin_Build_VST=0",
+					"JucePlugin_Build_VST3=1",
+					"JucePlugin_Build_AU=0",
+					"JucePlugin_Build_AUv3=0",
+					"JucePlugin_Build_AAX=0",
+					"JucePlugin_Build_Standalone=0",
+					"JucePlugin_Build_Unity=0",
+					"JucePlugin_Build_LV2=0",
+					"JucePlugin_Enable_IAA=0",
+					"JucePlugin_Enable_ARA=0",
+					"JucePlugin_Name=\\\"TrombonePlugin\\\"",
+					"JucePlugin_Desc=\\\"TrombonePlugin\\\"",
+					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerEmail=\\\"\\\"",
+					"JucePlugin_ManufacturerCode=0x4d616e75",
+					"JucePlugin_PluginCode=0x51376665",
+					"JucePlugin_IsSynth=0",
+					"JucePlugin_WantsMidiInput=0",
+					"JucePlugin_ProducesMidiOutput=0",
+					"JucePlugin_IsMidiEffect=0",
+					"JucePlugin_EditorRequiresKeyboardFocus=0",
+					"JucePlugin_Version=1.0.0",
+					"JucePlugin_VersionCode=0x10000",
+					"JucePlugin_VersionString=\\\"1.0.0\\\"",
+					"JucePlugin_VSTUniqueID=JucePlugin_PluginCode",
+					"JucePlugin_VSTCategory=kPlugCategEffect",
+					"JucePlugin_Vst3Category=\\\"Fx\\\"",
+					"JucePlugin_AUMainType=\\'aufx\\'",
+					"JucePlugin_AUSubType=JucePlugin_PluginCode",
+					"JucePlugin_AUExportPrefix=TrombonePluginAU",
+					"JucePlugin_AUExportPrefixQuoted=\\\"TrombonePluginAU\\\"",
+					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_CFBundleIdentifier=com.yourcompany.TrombonePlugin",
+					"JucePlugin_AAXIdentifier=com.yourcompany.TrombonePlugin",
+					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
+					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
+					"JucePlugin_AAXCategory=0",
+					"JucePlugin_AAXDisableBypass=0",
+					"JucePlugin_AAXDisableMultiMono=0",
+					"JucePlugin_IAAType=0x61757278",
+					"JucePlugin_IAASubType=JucePlugin_PluginCode",
+					"JucePlugin_IAAName=\\\"yourcompany:\\ TrombonePlugin\\\"",
+					"JucePlugin_VSTNumMidiInputs=16",
+					"JucePlugin_VSTNumMidiOutputs=16",
+					"JucePlugin_ARAContentTypes=0",
+					"JucePlugin_ARATransformationFlags=0",
+					"JucePlugin_ARAFactoryID=\\\"com.yourcompany.TrombonePlugin.factory\\\"",
+					"JucePlugin_ARADocumentArchiveID=\\\"com.yourcompany.TrombonePlugin.aradocumentarchive.1.0.0\\\"",
+					"JucePlugin_ARACompatibleArchiveIDs=\\\"\\\"",
+					"JUCE_STANDALONE_APPLICATION=JucePlugin_Build_Standalone",
+					"JUCER_XCODE_MAC_F6D2F4CF=1",
+					"JUCE_APP_VERSION=1.0.0",
+					"JUCE_APP_VERSION_HEX=0x10000",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GENERATE_PKGINFO_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK",
+					"$(SRCROOT)/../../JuceLibraryCode",
+					"/Users/silvinwillemsen/repositories/JUCE/modules",
+					"/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Info-VST3.plist;
+				INFOPLIST_PREPROCESS = NO;
+				INSTALL_PATH = "$(HOME)/Library/Audio/Plug-Ins/VST3/";
+				LIBRARY_STYLE = Bundle;
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_HEADER_SEARCH_PATHS = "/Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode /Users/silvinwillemsen/repositories/JUCE/modules /Users/silvinwillemsen/repositories/JUCE/modules/juce_audio_plugin_client/AU";
+				OTHER_LDFLAGS = "-bundle -lTrombonePlugin";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.TrombonePlugin;
+				PRODUCT_NAME = "TrombonePlugin";
+				USE_HEADERMAP = NO;
+				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
+				WRAPPER_EXTENSION = vst3;
 			};
 			name = Release;
 		};
 		EC4F41F5108755C41B79C4C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -1389,47 +2333,74 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		42BE56FFEA3C66B7E607F2C9 /* Build configuration list for PBXNativeTarget "TrombonePlugin - Unity Plugin" */ = {
+		01B03792A69F105A2A9258C1 = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2A0FFEA4F0913089CFE0D1CE /* Debug */,
-				6A5C65CDA1E86F86BCCFCEFD /* Release */,
+				8F940B6FAECC1FC2B2DA9011,
+				E5462C806B138D3EA89FF688,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		734C0626EA9637F597FE7BFD /* Build configuration list for PBXNativeTarget "TrombonePlugin - Shared Code" */ = {
+		42BE56FFEA3C66B7E607F2C9 = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4B393716109C418B325F5B0 /* Debug */,
-				E10B91A1F774EA7104451AE4 /* Release */,
+				2A0FFEA4F0913089CFE0D1CE,
+				6A5C65CDA1E86F86BCCFCEFD,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		93BC8D40999D986DFD6A067B /* Build configuration list for PBXAggregateTarget "TrombonePlugin - All" */ = {
+		734C0626EA9637F597FE7BFD = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC4F41F5108755C41B79C4C2 /* Debug */,
-				56EB12AB4522200EAAE9A0D5 /* Release */,
+				D4B393716109C418B325F5B0,
+				E10B91A1F774EA7104451AE4,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		A6B8E55E1E4B43E884B8714B /* Build configuration list for PBXNativeTarget "TrombonePlugin - Standalone Plugin" */ = {
+		7B4A822D46FA5F5FB9F9E88B = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B49FF5BB25286A6BD9703C6D /* Debug */,
-				6FE7A08655AC40CF58BAB638 /* Release */,
+				0526AAC852DBA88EB831A9B9,
+				08FE3D2BE0D5C8D4A26B3105,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		F0956FBA5D702C3F7C5570F7 /* Build configuration list for PBXProject "TrombonePlugin" */ = {
+		93BC8D40999D986DFD6A067B = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				23EE33CA9E6EF11916F67A0F /* Debug */,
-				530733EF4D3AC0E45698FB38 /* Release */,
+				EC4F41F5108755C41B79C4C2,
+				56EB12AB4522200EAAE9A0D5,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A6B8E55E1E4B43E884B8714B = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B49FF5BB25286A6BD9703C6D,
+				6FE7A08655AC40CF58BAB638,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D801F18636E74E4C61A1862A = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E40DC175D32E50AE3B32951B,
+				847010AA82A3732CCB0D6CE0,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F0956FBA5D702C3F7C5570F7 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23EE33CA9E6EF11916F67A0F,
+				530733EF4D3AC0E45698FB38,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
